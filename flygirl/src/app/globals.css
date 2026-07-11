@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-warmwhite text-ink font-sans font-light leading-relaxed;
+  }
+
+  /* V2: primary headings slightly bolder for stronger editorial presence */
+  h1,
+  h2 {
+    @apply font-serif font-semibold leading-tight;
+    letter-spacing: 0.005em;
+  }
+
+  h3,
+  h4 {
+    @apply font-serif font-medium leading-tight;
+    letter-spacing: 0.005em;
+  }
+
+  /* Visible keyboard focus for accessibility */
+  :focus-visible {
+    outline: 2px solid theme("colors.gold.DEFAULT");
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: theme("colors.champagne");
+    color: theme("colors.plum.DEFAULT");
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-sans text-gold-deep font-normal uppercase;
+    font-size: 0.72rem;
+    letter-spacing: 0.42em;
+  }
+
+  /* Higher-contrast eyebrow for small labels on light backgrounds (WCAG AA). */
+  .eyebrow-ink {
+    @apply text-gold-ink;
+  }
+
+  .section-shell {
+    @apply mx-auto max-w-shell;
+    padding-left: clamp(1.5rem, 6vw, 5rem);
+    padding-right: clamp(1.5rem, 6vw, 5rem);
+    padding-top: clamp(4rem, 9vw, 7.5rem);
+    padding-bottom: clamp(4rem, 9vw, 7.5rem);
+  }
+
+  /* Scroll-reveal: hidden until .is-visible is added by the Reveal component */
+  .reveal {
+    opacity: 0;
+    transform: translateY(34px);
+    transition:
+      opacity 1.3s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 1.3s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@layer utilities {
+  .text-shadow-luxe {
+    text-shadow: 0 2px 30px rgba(74, 43, 68, 0.45);
+  }
+  .text-shadow-soft {
+    text-shadow: 0 2px 20px rgba(74, 43, 68, 0.4);
+  }
+}
+
+/* Respect reduced motion everywhere */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
