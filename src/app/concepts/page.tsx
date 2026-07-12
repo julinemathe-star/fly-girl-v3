@@ -54,8 +54,8 @@ export default function ConceptsPage() {
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <div className="absolute left-3 top-3 rounded-full bg-plum/85 px-3 py-1 text-[0.6rem] uppercase tracking-luxe text-champagne backdrop-blur-sm">
-                  Concept Rendering
+                <div className="absolute bottom-2 right-2 rounded-[2px] bg-plum/40 px-1.5 py-0.5 text-[0.45rem] uppercase tracking-[0.12em] text-white/70">
+                  concept
                 </div>
               </Reveal>
             ))}

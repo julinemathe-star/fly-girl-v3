@@ -210,6 +210,14 @@ export const caseStudies: CaseStudy[] = [
         alt: "Personalized destination welcome bags with travel essentials and tropical florals",
       },
       {
+        src: "/media/portfolio/welcome-gifts/navy-gold-welcome-gift-set.jpg",
+        alt: "Navy and gold Fly Girl branded welcome gift collection with tumbler, luggage tag, sleep mask, and wax-sealed stationery",
+      },
+      {
+        src: "/media/portfolio/welcome-gifts/black-gold-cocktail-gift-box.jpg",
+        alt: "Black and gold Fly Girl cocktail gift box with crystal glass, gold barware, and old fashioned syrup",
+      },
+      {
         src: "/media/portfolio/marios-50th-birthday/03-favor-box.jpg",
         alt: "Navy and gold milestone celebration favor box with personalized detailing",
       },
@@ -224,10 +232,6 @@ export const caseStudies: CaseStudy[] = [
       {
         src: "/media/portfolio/little-luxe/04-smores-favor-kit.jpg",
         alt: "Packaged s'mores favor kit with personalized labeling and ribbon",
-      },
-      {
-        src: "/media/portfolio/laurens-7th-birthday/05-favor-packaging.jpg",
-        alt: "Personalized black and gold favor packaging and treat box",
       },
     ],
   },
@@ -268,10 +272,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "corporate-executive-concepts",
     title: "Corporate & Executive Experiences",
-    subtitle: "Design Concepts — Networking, Executive Environments & VIP Hospitality",
+    subtitle: "Networking, Executive Environments & VIP Hospitality",
     category: "corporate-executive",
     summary:
-      "Concept visualizations exploring Fly Girl corporate experiences — executive networking events, refined office environments, and VIP hospitality. Presented as design concepts with fictional branding.",
+      "Executive networking events, refined office environments, and VIP hospitality — designed to reflect your brand at its most considered.",
     images: [
       {
         src: "/media/concepts/corporate/networking-event-concept.jpg",
@@ -290,10 +294,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "sports-hospitality-concepts",
     title: "Sports Hospitality",
-    subtitle: "Design Concepts — Draft Party & Team Dinner Transformations",
+    subtitle: "Draft Party & Team Dinner Transformations",
     category: "sports-hospitality",
     summary:
-      "Concept visualizations exploring Fly Girl sports hospitality — an empty marble hall becomes a black-and-gold Draft Night, and a corporate boardroom becomes a championship team dinner. Presented as design concepts with fictional team branding.",
+      "An empty marble hall becomes a black-and-gold Draft Night, and a corporate boardroom becomes a championship team dinner — sports hospitality designed around a team's identity.",
     images: [
       {
         src: "/media/concepts/sports/draft-party-concept.jpg",
@@ -316,10 +320,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "styled-spaces-concepts",
     title: "Styled Spaces",
-    subtitle: "Design Concepts — Executive Offices & Luxury Interiors",
+    subtitle: "Executive Offices & Luxury Interiors",
     category: "styled-spaces",
     summary:
-      "Concept visualizations exploring Fly Girl styled spaces — an executive office transformation inspired by our Elite European Auto project, and refined luxury interiors. Presented as design concepts.",
+      "An executive office transformation inspired by our Elite European Auto project, and refined luxury interiors composed with an editorial eye.",
     images: [
       {
         src: "/media/concepts/styled-spaces/executive-office-concept.jpg",
@@ -334,7 +338,7 @@ export const caseStudies: CaseStudy[] = [
         alt: "Design Concept — a moody luxury lounge with leather seating, fireplace, and considered styling",
       },
       {
-        src: "/media/concepts/virtual-staging/living-room-concept.jpg",
+        src: "/media/concepts/staging/living-room-after-concept.jpg",
         alt: "Design Concept — a bright, editorial living room styled in warm ivory with layered textures",
       },
     ],

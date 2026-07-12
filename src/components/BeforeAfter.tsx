@@ -21,7 +21,7 @@ export default function BeforeAfter({
   beforeAlt,
   afterSrc,
   afterAlt,
-  afterLabel = "Design Concept",
+  afterLabel = "After",
   caption,
 }: BeforeAfterProps) {
   return (
@@ -36,7 +36,7 @@ export default function BeforeAfter({
             sizes="(max-width: 640px) 100vw, 50vw"
             className="object-cover"
           />
-          <span className="absolute left-4 top-4 rounded-[2px] bg-navy-deep/80 px-3 py-1.5 text-[0.62rem] uppercase tracking-luxe text-white">
+          <span className="absolute left-3 top-3 rounded-[2px] bg-navy-deep/60 px-2 py-1 text-[0.5rem] uppercase tracking-[0.14em] text-white/85">
             Before
           </span>
         </div>
@@ -49,7 +49,7 @@ export default function BeforeAfter({
             sizes="(max-width: 640px) 100vw, 50vw"
             className="object-cover"
           />
-          <span className="absolute left-4 top-4 rounded-[2px] bg-gold-deep/90 px-3 py-1.5 text-[0.62rem] uppercase tracking-luxe text-white">
+          <span className="absolute left-3 top-3 rounded-[2px] bg-gold-deep/70 px-2 py-1 text-[0.5rem] uppercase tracking-[0.14em] text-white/85">
             {afterLabel}
           </span>
         </div>

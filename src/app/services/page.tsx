@@ -65,18 +65,30 @@ export default function ServicesPage() {
               </p>
             </Reveal>
             <Reveal delay={0.1} as="figure">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-[4px] shadow-media">
-                <Image
-                  src="/media/concepts/home-staging/vacant-living-room.jpg"
-                  alt="A vacant new-build living room awaiting Fly Girl staging — the blank canvas before buyers can picture a life inside it"
-                  fill
-                  loading="lazy"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                />
+              <div className="grid grid-cols-1 gap-3">
+                <div className="relative aspect-[16/10] overflow-hidden rounded-[4px] shadow-media">
+                  <Image
+                    src="/media/concepts/staging/home-staging-living-before.jpg"
+                    alt="Living room before Fly Girl staging — neutral and unstyled"
+                    fill
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative aspect-[16/10] overflow-hidden rounded-[4px] shadow-media">
+                  <Image
+                    src="/media/concepts/staging/home-staging-living-after.jpg"
+                    alt="The same living room after Fly Girl staging — layered navy, gold, and editorial styling"
+                    fill
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
               </div>
               <figcaption className="mt-3 text-center text-[0.85rem] text-plum-body/85">
-                Every vacant home is a story waiting to be styled.
+                The same room — before, and after Fly Girl.
               </figcaption>
             </Reveal>
           </div>
@@ -97,24 +109,23 @@ export default function ServicesPage() {
               Perfect for builders, luxury Realtors, developers, vacation rentals,
               homeowners, and model homes.
             </p>
-            <p className="mx-auto mt-4 max-w-[56ch] text-[0.9rem] leading-relaxed text-plum-body/80">
-              Virtual staging images are presented as design concepts — a preview of
-              what your space can become, never a completed client project.
+            <p className="mx-auto mt-3 max-w-[56ch] text-[0.7rem] leading-relaxed text-plum-body/60">
+              Virtual staging imagery previews what your space can become.
             </p>
           </Reveal>
 
           <div className="space-y-10">
             <BeforeAfter
-              beforeSrc="/media/concepts/virtual-staging/living-room-before.jpg"
+              beforeSrc="/media/concepts/staging/living-room-before.jpg"
               beforeAlt="Before — a rustic living room with stone fireplace prior to the virtual staging concept"
-              afterSrc="/media/concepts/virtual-staging/living-room-concept.jpg"
+              afterSrc="/media/concepts/staging/living-room-after-concept.jpg"
               afterAlt="Design Concept — the same living room digitally reimagined in warm ivory with editorial styling"
               caption="A rustic great room, digitally reimagined in warm ivory — same architecture, entirely new feeling."
             />
             <BeforeAfter
-              beforeSrc="/media/concepts/virtual-staging/bathroom-before.jpg"
+              beforeSrc="/media/concepts/staging/bathroom-before.jpg"
               beforeAlt="Before — an unstyled bathroom prior to the virtual staging concept"
-              afterSrc="/media/concepts/virtual-staging/bathroom-concept.jpg"
+              afterSrc="/media/concepts/staging/bathroom-after-concept.jpg"
               afterAlt="Design Concept — the same bathroom digitally reimagined with layered shelving, art, and warm styling"
               caption="An everyday bathroom, digitally restyled with warmth, texture, and considered details."
             />

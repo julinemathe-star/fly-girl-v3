@@ -19,7 +19,6 @@ export const experiences: Experience[] = [
   {
     id: "corporate-executive-styling",
     title: "Corporate & Executive Styling",
-    subheading: "Shown: Design Concept",
     description:
       "Executive dinners, VIP receptions, networking events, and corporate hospitality — designed to reflect your organization at its most considered and memorable.",
     image: "/media/experiences/corporate-executive-styling.jpg",
@@ -29,7 +28,6 @@ export const experiences: Experience[] = [
   {
     id: "sports-hospitality",
     title: "Sports Hospitality",
-    subheading: "Shown: Design Concept",
     description:
       "Draft parties, VIP hospitality suites, and luxury sports experiences — environments designed around a team's identity, culture, and the people who make it great.",
     image: "/media/experiences/sports-hospitality.jpg",
@@ -39,7 +37,6 @@ export const experiences: Experience[] = [
   {
     id: "team-dinners",
     title: "Team Dinners",
-    subheading: "Shown: Design Concept",
     description:
       "Championship-caliber team dinners — candlelit tables, personalized details, and rooms styled to celebrate what a team stands for.",
     image: "/media/experiences/team-dinners.jpg",
@@ -67,7 +64,6 @@ export const experiences: Experience[] = [
   {
     id: "styled-spaces",
     title: "Styled Spaces",
-    subheading: "Shown: Design Concept",
     description:
       "Executive offices, commercial interiors, model homes, and luxury residences — spaces styled to feel considered, warm, and quietly glamorous.",
     image: "/media/experiences/styled-spaces.jpg",
@@ -77,17 +73,15 @@ export const experiences: Experience[] = [
   {
     id: "home-staging",
     title: "Home Staging",
-    subheading: "Shown: Before & Design Concept",
     description:
       "Thoughtful styling that prepares homes for market and creates emotional buyer connections — for homeowners, Realtors, and builders.",
     image: "/media/experiences/home-staging.jpg",
-    alt: "Before and after — a living room transformed from rustic to warm ivory editorial styling, shown as a design concept",
+    alt: "Before and after — the same living room transformed with layered navy, gold, and editorial staging",
     href: "/services#home-staging",
   },
   {
     id: "virtual-staging",
     title: "Virtual Staging",
-    subheading: "Shown: Before & Design Concept",
     description:
       "Send photos of an empty or outdated room and Fly Girl digitally reimagines the space — before a single piece of furniture is purchased.",
     image: "/media/experiences/virtual-staging.jpg",
