@@ -339,6 +339,80 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
   },
+  {
+    slug: "executive-dining",
+    title: "Executive Dinners & Signature Tablescapes",
+    subtitle: "Corporate & Private Dining Details",
+    category: "corporate-executive",
+    summary:
+      "Black-and-gold executive dinners, acrylic gold-foil menus, and candlelit ivory tables — the considered dining details that carry a Fly Girl experience from first course to final toast.",
+    images: [
+      {
+        src: "/media/portfolio/executive-dining/01-black-gold-tablescape.jpg",
+        alt: "Black and gold executive dinner tablescape with patterned chargers, black goblets, and taper candles",
+      },
+      {
+        src: "/media/portfolio/executive-dining/02-acrylic-gold-menu.jpg",
+        alt: "Acrylic menu with gold foil script resting on a black satin napkin with gold flatware",
+      },
+      {
+        src: "/media/portfolio/executive-dining/03-white-gold-place-setting.jpg",
+        alt: "White and gold place setting with beaded charger, pleated napkin, and printed menu",
+      },
+      {
+        src: "/media/portfolio/executive-dining/04-candlelit-ivory-tablescape.jpg",
+        alt: "Candlelit ivory and gold tablescape with greenery garland, roses, and champagne",
+      },
+    ],
+  },
+  {
+    slug: "holiday-styling",
+    title: "Holiday & Seasonal Styling",
+    subtitle: "Winter White & Gold",
+    category: "corporate-executive",
+    summary:
+      "Winter white and gold seasonal styling for corporate holiday events and private gatherings — crushed velvet, beaded chargers, mercury glass, and quiet sparkle.",
+    images: [
+      {
+        src: "/media/portfolio/holiday-styling/02-winter-white-place-setting.jpg",
+        alt: "Winter white place setting with gold-beaded charger, crystal napkin ring, and gold mercury-glass stemware",
+      },
+      {
+        src: "/media/portfolio/holiday-styling/01-gold-beaded-charger-setting.jpg",
+        alt: "Gold jeweled charger with white embroidered napkin and butterfly napkin ring on a black table",
+      },
+      {
+        src: "/media/portfolio/holiday-styling/03-winter-white-tablescape.jpg",
+        alt: "Winter white holiday tablescape with crushed velvet linen, gold chiavari chairs, and white reindeer centerpiece",
+      },
+    ],
+  },
+  {
+    slug: "blush-gold-celebration",
+    title: "Blush & Gold Celebrations",
+    subtitle: "Soft Glamour — Celebration Styling",
+    category: "private-celebrations",
+    summary:
+      "Blush, lavender, and gold celebration styling — sequin linens, gold chiavari seating, layered florals, and jeweled place settings designed for milestone moments.",
+    images: [
+      {
+        src: "/media/portfolio/blush-gold-celebration/02-quinceanera-head-table.jpg",
+        alt: "Quinceañera head table with blush sequin linen, floral garland backdrop, and throne seating",
+      },
+      {
+        src: "/media/portfolio/blush-gold-celebration/01-blush-event-room.jpg",
+        alt: "Blush celebration room with gold chiavari chairs, sequin accents, and white floral centerpieces",
+      },
+      {
+        src: "/media/portfolio/blush-gold-celebration/03-blush-lavender-place-settings.jpg",
+        alt: "Blush and lavender place settings with gold flatware, jeweled napkin rings, and rose petals",
+      },
+      {
+        src: "/media/portfolio/blush-gold-celebration/04-chiavari-chair-detail.jpg",
+        alt: "Gold chiavari chair with blush satin sash and single rose detail",
+      },
+    ],
+  },
 ];
 
 /** Returns all case studies belonging to a given category slug, in listed order. */

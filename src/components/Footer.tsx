@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
 
@@ -27,6 +28,13 @@ export default function Footer() {
     >
       <div className="mx-auto grid max-w-shell grid-cols-1 gap-10 border-b border-gold/20 pb-12 sm:grid-cols-2 md:grid-cols-[1.6fr_1fr_1fr_1fr]">
         <div>
+          <Image
+            src="/brand/logo-full.jpg"
+            alt={site.name}
+            width={900}
+            height={900}
+            className="mb-5 h-[132px] w-[132px] rounded-[6px] ring-1 ring-gold/30"
+          />
           <h3 className="mb-4 font-serif text-2xl uppercase tracking-[0.2em] text-white">
             {site.shortName}
           </h3>

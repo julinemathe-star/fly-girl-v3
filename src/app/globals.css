@@ -103,3 +103,20 @@
     transform: none !important;
   }
 }
+
+/* Glamorous metallic gold wordmark for the hero */
+.text-gold-gradient {
+  background: linear-gradient(
+    100deg,
+    #f9edbe 0%,
+    #e8c877 26%,
+    #c9a24b 46%,
+    #f4dfa0 64%,
+    #d4af5e 82%,
+    #b8934a 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 14px rgba(15, 25, 48, 0.55));
+}

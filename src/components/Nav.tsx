@@ -24,7 +24,7 @@ export default function Nav() {
     };
   }, [open]);
 
-  const markHeight = scrolled ? 44 : 52;
+  const markHeight = scrolled ? 52 : 64;
 
   return (
     <header
@@ -42,13 +42,13 @@ export default function Nav() {
         onClick={() => setOpen(false)}
       >
         <Image
-          src="/brand/fg-mark.png"
+          src="/brand/logo-full.jpg"
           alt={site.name}
-          width={374}
-          height={200}
+          width={900}
+          height={900}
           priority
-          className={`w-auto transition-all duration-500 ease-luxe ${
-            scrolled ? "drop-shadow-none" : "drop-shadow-[0_2px_10px_rgba(74,43,68,0.45)]"
+          className={`w-auto rounded-[4px] ring-1 ring-gold/40 transition-all duration-500 ease-luxe ${
+            scrolled ? "shadow-none" : "shadow-[0_2px_14px_rgba(15,25,48,0.5)]"
           }`}
           style={{ height: markHeight }}
         />
