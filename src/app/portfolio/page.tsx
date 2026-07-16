@@ -3,7 +3,8 @@ import PageHeader from "@/components/PageHeader";
 import CaseStudySection from "@/components/CaseStudySection";
 import CategoryGallerySection from "@/components/CategoryGallerySection";
 import InquirySection from "@/components/sections/InquirySection";
-import { caseStudies, categoryGalleries, caseStudiesInCategory } from "@/lib/portfolio-galleries";
+import { categoryGalleries } from "@/lib/portfolio-galleries";
+import { buildPortfolio } from "@/lib/portfolio-scan";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -11,7 +12,13 @@ export const metadata: Metadata = {
     "Selected work from Fly Girl Events & Design — corporate and executive experiences, destination experiences, styled spaces, welcome gifts, signature details, private celebrations, and Little Luxe™.",
 };
 
+// The portfolio is assembled from the folders in public/media/portfolio at
+// build time — always render this page statically.
+export const dynamic = "force-static";
+
 export default function PortfolioPage() {
+  const studies = buildPortfolio();
+
   return (
     <>
       <PageHeader
@@ -27,13 +34,13 @@ export default function PortfolioPage() {
         <CategoryGallerySection
           key={gallery.slug}
           gallery={gallery}
-          studies={caseStudiesInCategory(gallery.slug)}
+          studies={studies.filter((study) => study.category === gallery.slug)}
           tone={i % 2 === 0 ? "warmwhite" : "ivory"}
         />
       ))}
 
       {/* Every celebration, told in full */}
-      {caseStudies.map((study, i) => (
+      {studies.map((study, i) => (
         <CaseStudySection key={study.slug} study={study} tone={i % 2 === 0 ? "ivory" : "warmwhite"} />
       ))}
 

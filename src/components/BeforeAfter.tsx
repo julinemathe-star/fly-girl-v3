@@ -36,7 +36,7 @@ export default function BeforeAfter({
             sizes="(max-width: 640px) 100vw, 50vw"
             className="object-cover"
           />
-          <span className="absolute left-3 top-3 rounded-[2px] bg-navy-deep/60 px-2 py-1 text-[0.5rem] uppercase tracking-[0.14em] text-white/85">
+          <span className="absolute left-3 top-3 rounded-[2px] bg-navy-deep/60 px-2 py-1 text-[0.66rem] uppercase tracking-[0.14em] text-white/85">
             Before
           </span>
         </div>
@@ -49,7 +49,7 @@ export default function BeforeAfter({
             sizes="(max-width: 640px) 100vw, 50vw"
             className="object-cover"
           />
-          <span className="absolute left-3 top-3 rounded-[2px] bg-gold-deep/70 px-2 py-1 text-[0.5rem] uppercase tracking-[0.14em] text-white/85">
+          <span className="absolute left-3 top-3 rounded-[2px] bg-gold-deep/70 px-2 py-1 text-[0.66rem] uppercase tracking-[0.14em] text-white/85">
             {afterLabel}
           </span>
         </div>

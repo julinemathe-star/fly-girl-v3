@@ -41,7 +41,7 @@ export default function ExperienceRow({ experience, index }: ExperienceRowProps)
         } max-w-[46ch] ${imageLeft ? "" : "md:ml-auto"}`}
       >
         {experience.subheading ? (
-          <span className="mb-3 block font-sans text-[0.66rem] uppercase tracking-luxe text-gold-ink">
+          <span className="mb-3 block font-sans text-[0.72rem] uppercase tracking-luxe text-gold-ink">
             {experience.subheading}
           </span>
         ) : null}

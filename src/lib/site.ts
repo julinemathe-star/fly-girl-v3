@@ -5,6 +5,11 @@ export const site = {
   headline: "Creating unforgettable celebrations and beautifully styled spaces.",
   /** One-line positioning shown across the site. */
   positioning: "Luxury Event Designer",
+  /** Hero headline — the studio's primary promise, stated plainly. */
+  heroStatement: "We Create Extraordinary Environments",
+  /** Hero support line — concise, editorial, no fluff. */
+  heroSub:
+    "A luxury design studio for celebrations, executive experiences, and styled spaces — in Frisco, Texas and worldwide.",
   /** Immediate clarity statement for new visitors (homepage, meta). */
   clarity:
     "We transform celebrations, executive spaces, model homes and luxury environments into unforgettable experiences through thoughtful design, styling and hospitality.",
@@ -37,10 +42,9 @@ export type NavLink = { label: string; href: string };
 export const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Experiences", href: "/experiences" },
+  { label: "Services", href: "/services" },
   { label: "Design Studio", href: "/design-studio" },
   { label: "Investment", href: "/investment" },
-  { label: "Services", href: "/services" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "Contact", href: "/contact" },
 ];

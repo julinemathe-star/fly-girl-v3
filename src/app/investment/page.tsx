@@ -80,7 +80,7 @@ export default function InvestmentPage() {
 
                 {tier.custom ? (
                   <div className="mt-5">
-                    <span className="block font-sans text-[0.66rem] uppercase tracking-luxe text-gold-ink">
+                    <span className="block font-sans text-[0.72rem] uppercase tracking-luxe text-gold-ink">
                       Investment
                     </span>
                     <span className="mt-1 block font-serif text-[1.7rem] leading-none text-plum">
@@ -89,7 +89,7 @@ export default function InvestmentPage() {
                   </div>
                 ) : (
                   <div className="mt-5">
-                    <span className="block font-sans text-[0.66rem] uppercase tracking-luxe text-gold-ink">
+                    <span className="block font-sans text-[0.72rem] uppercase tracking-luxe text-gold-ink">
                       Investment Begins at
                     </span>
                     <span className="mt-1 block font-serif text-[2.1rem] leading-none text-plum">

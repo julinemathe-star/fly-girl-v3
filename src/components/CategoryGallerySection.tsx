@@ -58,7 +58,7 @@ export default function CategoryGallerySection({
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent from-45% to-plum/60 opacity-60 transition-opacity duration-500 group-hover:opacity-80" />
                     <figcaption className="absolute bottom-5 left-5 z-[2]">
                       <div className="font-serif text-xl text-white">{study.title}</div>
-                      <div className="mt-0.5 text-[0.6rem] uppercase tracking-luxe text-champagne">
+                      <div className="mt-0.5 text-[0.68rem] uppercase tracking-luxe text-champagne">
                         {study.subtitle}
                       </div>
                     </figcaption>

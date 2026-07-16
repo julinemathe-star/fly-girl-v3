@@ -109,7 +109,7 @@ export default function ServicesPage() {
               Perfect for builders, luxury Realtors, developers, vacation rentals,
               homeowners, and model homes.
             </p>
-            <p className="mx-auto mt-3 max-w-[56ch] text-[0.7rem] leading-relaxed text-plum-body/60">
+            <p className="mx-auto mt-3 max-w-[56ch] text-[0.78rem] leading-relaxed text-plum-body/85">
               Virtual staging imagery previews what your space can become.
             </p>
           </Reveal>

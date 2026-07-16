@@ -20,7 +20,7 @@ const eventTypes = [
 const fieldClass =
   "w-full border-b border-gold/40 bg-transparent py-3 text-plum placeholder:text-plum-soft/50 focus:border-gold focus:outline-none transition-colors";
 const labelClass =
-  "block text-[0.66rem] uppercase tracking-luxe text-gold-ink mb-1";
+  "block text-[0.72rem] uppercase tracking-luxe text-gold-ink mb-1";
 
 export default function InquiryForm() {
   const [sent, setSent] = useState(false);

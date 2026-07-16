@@ -30,7 +30,7 @@ Open [http://localhost:3000](http://localhost:3000).
 | `/little-luxe` | Little Luxe™, presented by Team 2 Much™ (Lauren's page) |
 | `/begin-your-journey` | Primary inquiry / booking-request page — where every "Begin Your Journey" and "Reserve Your Experience" CTA site-wide leads |
 | `/services` | Service listing |
-| `/portfolio` | Editorial portfolio grid |
+| `/portfolio` | Editorial portfolio — assembled automatically from the folders in `public/media/portfolio/` (see below) |
 | `/contact` | Simple business contact page (studio email/location + a general inquiry form) |
 
 `/contact` and `/begin-your-journey` are intentionally distinct: `/contact` is for
@@ -46,8 +46,8 @@ public/
 src/
   app/            App Router pages (one folder per route above)
                   + layout, sitemap, robots, 404, global styles
-  components/     Nav, Footer, Hero, Button, Reveal, cards, forms, headings
-    sections/     Reusable homepage/page sections (About, Services, Portfolio, Journey, Inquiry)
+  components/     Nav, Footer, Hero, FeaturedProjects, Button, Reveal, cards, forms, headings
+    sections/     Reusable page sections (Journey, Inquiry)
   lib/            Site config + per-page content data (services, experiences, crew,
                   investment tiers, portfolio, journey, little-luxe, preview-experience)
 tailwind.config.ts  Brand design tokens (palette, type, motion)
@@ -152,3 +152,23 @@ $2,000 · Home Staging $1,500 · Virtual Staging $395/room · Residential
 $500/room. Consultation remains $250 with the V3 inclusion list.
 New hero brand film in /public/media/hero.mp4. Before & After component at
 src/components/BeforeAfter.tsx. Concept imagery uses fictional branding only.
+
+## How the portfolio folders work (launch build)
+
+`public/media/portfolio/` is the source of truth. Every folder is one project or
+one service category:
+
+- **Add photos to an existing project** — drop images into its folder using the
+  `01-descriptive-name.jpg` convention. New images are appended to that
+  project's gallery automatically on the next build (the `01-` prefix controls
+  order; the first image is the cover).
+- **Add a brand-new project** — create a new folder with images inside. It
+  appears on the portfolio page automatically, titled from the folder name in
+  elegant title case (e.g. `Commercial Styling`).
+- **Curated details** — titles, subtitles, summaries, and hand-written alt text
+  for existing projects live in `src/lib/portfolio-galleries.ts` and always win
+  over auto-generated text. Folders that contain only a `README.txt` are
+  treated as placeholders and stay hidden until photos arrive.
+
+The scan happens at build time (`src/lib/portfolio-scan.ts`), so republish on
+Netlify after adding photos.

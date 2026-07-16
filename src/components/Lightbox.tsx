@@ -89,7 +89,7 @@ export default function Lightbox({ images, index, title, onClose, onNavigate }: 
           {title ? (
             <div className="truncate font-serif text-lg text-white sm:text-xl">{title}</div>
           ) : null}
-          <div className="mt-0.5 text-[0.62rem] uppercase tracking-luxe text-champagne">
+          <div className="mt-0.5 text-[0.68rem] uppercase tracking-luxe text-champagne">
             {index + 1} of {count}
           </div>
         </div>

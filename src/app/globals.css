@@ -9,12 +9,16 @@
 
   html {
     scroll-behavior: smooth;
+    /* Offset anchor jumps so headings aren't hidden under the fixed nav */
+    scroll-padding-top: 7.5rem;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
 
   body {
     @apply bg-warmwhite text-ink font-sans font-light leading-relaxed;
+    /* Guard against any stray element creating sideways scroll on mobile */
+    overflow-x: clip;
   }
 
   /* V2: primary headings slightly bolder for stronger editorial presence */
