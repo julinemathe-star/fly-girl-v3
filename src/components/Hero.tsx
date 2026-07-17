@@ -71,7 +71,7 @@ export default function Hero() {
 
         <div className="mx-auto mt-7 flex max-w-[340px] animate-hero-actions flex-col">
           <Button href="/begin-your-journey" variant="primary" className="w-full">
-            Schedule a Consultation
+            Schedule Your Consultation
           </Button>
         </div>
       </div>
@@ -143,7 +143,7 @@ export default function Hero() {
 
         <div className="flex animate-hero-actions flex-row flex-wrap justify-start gap-[1.1rem]">
           <Button href="/begin-your-journey" variant="primary" className="w-auto">
-            Schedule a Consultation
+            Schedule Your Consultation
           </Button>
         </div>
       </div>

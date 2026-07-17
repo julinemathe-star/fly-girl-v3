@@ -139,3 +139,33 @@ hierarchy and lazy loading intact.
   zero broken references. All files pass syntax checks.
 - Ready to connect to the Fly Girl domain: push to GitHub → Netlify builds
   with `next build` as before.
+
+
+---
+
+# Pre-Launch Compliance & Conversion Pass
+
+- New business phone site-wide: (972) 512-8781 — single token in
+  src/lib/site.ts, clickable (tel:) everywhere it appears.
+- Primary CTA relabeled "Schedule Your Consultation" (hero, homepage,
+  Design Studio).
+- Services page: every one of the 12 services now ends with its own
+  call-to-action button (Request a Proposal, Book a Consultation,
+  Schedule a Design Consultation, Start Your Project, Request Custom
+  Gifts), each leading to Begin Your Journey.
+- Design Studio copy focused on the client experience: previewing the
+  event before installation day.
+- Footer updated: studio identity, address, By Appointment Only,
+  clickable phone and email, Privacy Policy + Terms & Conditions links,
+  copyright. No repeated navigation or services.
+- NEW: /privacy-policy and /terms pages with the required SMS language —
+  consent never shared with third parties or affiliates for marketing;
+  STOP to opt out; HELP for help; message frequency varies; message and
+  data rates may apply; consent not a condition of purchase. Both added
+  to the sitemap and linked from every page's footer.
+- Backgrounds warmed: the base "warmwhite" token shifted from near-white
+  #FDFBF7 to champagne-ivory #FAF4EA site-wide; two pure-white chips
+  changed to ivory. Navy and gold unchanged. (Hamburger menu lines stay
+  white for contrast over the dark hero video.)
+- Full QC re-run: all links (including the two new legal pages), assets,
+  and syntax verified clean.

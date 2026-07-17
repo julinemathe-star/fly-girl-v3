@@ -176,7 +176,7 @@ export default function LittleLuxePage() {
               {littleLuxeInvestment.detail}
             </p>
 
-            <div className="mt-9 inline-flex items-baseline gap-2 rounded-[4px] border border-gold/40 bg-white px-8 py-5 shadow-media">
+            <div className="mt-9 inline-flex items-baseline gap-2 rounded-[4px] border border-gold/40 bg-ivory px-8 py-5 shadow-media">
               <span className="font-sans text-[0.72rem] uppercase tracking-luxe text-gold-ink">
                 Investment Begins at
               </span>

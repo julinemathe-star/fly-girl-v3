@@ -6,7 +6,7 @@ const config: Config = {
     extend: {
       colors: {
         // Approved Fly Girl palette
-        warmwhite: "#FDFBF7",
+        warmwhite: "#FAF4EA",
         ivory: "#F6F0E6",
         champagne: "#EAD9BF",
         gold: {

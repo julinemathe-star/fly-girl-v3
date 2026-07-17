@@ -82,7 +82,7 @@ export default function HomePage() {
 
             <div className="mt-11">
               <Button href="/begin-your-journey" variant="dark">
-                Schedule a Consultation
+                Schedule Your Consultation
               </Button>
             </div>
           </Reveal>

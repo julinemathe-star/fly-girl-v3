@@ -64,7 +64,7 @@ export default function DesignStudioPage() {
               </h2>
               <p className="mt-6 max-w-[52ch] text-[1.02rem] leading-[1.8] text-plum-body">
                 Clients visit by appointment to review, touch, compare, and approve
-                the key elements of their project before production or event day —
+                the key elements of their project before installation day —
                 from the design concept, palette, and linens to table styling,
                 welcome gift samples, packaging, menus, and signage.
               </p>
@@ -95,7 +95,7 @@ export default function DesignStudioPage() {
 
               <div className="mt-10">
                 <Button href="/begin-your-journey" variant="dark">
-                  Schedule a Consultation
+                  Schedule Your Consultation
                 </Button>
               </div>
             </Reveal>

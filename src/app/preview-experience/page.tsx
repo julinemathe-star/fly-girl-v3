@@ -170,7 +170,7 @@ export default function PreviewExperiencePage() {
               The Design Studio Consultation
             </h2>
 
-            <div className="mt-9 inline-flex items-baseline gap-2 rounded-[4px] border border-gold/40 bg-white px-8 py-5 shadow-media">
+            <div className="mt-9 inline-flex items-baseline gap-2 rounded-[4px] border border-gold/40 bg-ivory px-8 py-5 shadow-media">
               <span className="font-serif text-[2.4rem] leading-none text-plum">$250</span>
               <span className="font-sans text-[0.72rem] uppercase tracking-luxe text-gold-ink">
                 Private

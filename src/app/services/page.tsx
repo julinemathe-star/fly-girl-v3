@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import BeforeAfter from "@/components/BeforeAfter";
+import Button from "@/components/Button";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
 import InquirySection from "@/components/sections/InquirySection";
@@ -37,6 +38,11 @@ export default function ServicesPage() {
                 <div>
                   <h2 className="mb-3 text-2xl text-plum sm:text-3xl">{service.title}</h2>
                   <p className="max-w-[54ch] text-plum-soft">{service.detail}</p>
+                  <div className="mt-6">
+                    <Button href="/begin-your-journey" variant="dark">
+                      {service.cta}
+                    </Button>
+                  </div>
                 </div>
               </Reveal>
             ))}
