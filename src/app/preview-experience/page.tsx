@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
 import EditorialImageSection from "@/components/EditorialImageSection";
 import { designStudioIncludes, previewHowItWorks } from "@/lib/preview-experience";
-import { site } from "@/lib/site";
+import { site, consultationHref } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "The Design Studio Experience",
@@ -38,7 +38,7 @@ export default function PreviewExperiencePage() {
             <h1 className="mt-5 text-[clamp(2.3rem,5vw,4rem)] leading-[1.08] text-white text-shadow-luxe">
               Experience Your Event Before Your Event
             </h1>
-            <p className="mx-auto mt-7 max-w-[58ch] text-[1.05rem] leading-[1.8] text-white/90 text-shadow-soft">
+            <p className="mx-auto mt-7 max-w-[58ch] text-[1.05rem] leading-[1.55] text-white/90 text-shadow-soft">
               Most clients don&apos;t see their event until the day it happens. At Fly
               Girl Events &amp; Design, we believe luxury should come with confidence.
               Inside our private Design Studio at Formation, Dallas Cowboys World Headquarters in Frisco, clients
@@ -46,8 +46,8 @@ export default function PreviewExperiencePage() {
               compare, and refine every detail before event day.
             </p>
             <div className="mt-9">
-              <Button href="/begin-your-journey" variant="primary">
-                Reserve Your Design Studio Consultation
+              <Button href={consultationHref} variant="primary">
+                Reserve Your Design Consultation
               </Button>
             </div>
           </Reveal>
@@ -85,7 +85,7 @@ export default function PreviewExperiencePage() {
             <h2 className="text-[clamp(2rem,3.6vw,3.1rem)] leading-[1.15] text-plum">
               Luxury Lives In The Details
             </h2>
-            <div className="mx-auto mt-7 max-w-[58ch] text-[1.02rem] leading-[1.85] text-plum-body">
+            <div className="mx-auto mt-7 max-w-[58ch] text-[1.02rem] leading-[1.6] text-plum-body">
               <p>Beautiful celebrations are remembered because of the details.</p>
               <p className="mt-5 font-serif text-lg italic text-gold-ink">
                 Welcome gifts&hellip; Personalized stationery&hellip; Guest favors&hellip;
@@ -130,7 +130,7 @@ export default function PreviewExperiencePage() {
               {designStudioIncludes.map((item) => (
                 <li
                   key={item}
-                  className="flex items-start gap-3 text-[1.02rem] leading-[1.7] text-plum-body"
+                  className="flex items-start gap-3 text-[1.02rem] leading-[1.5] text-plum-body"
                 >
                   <span
                     aria-hidden="true"
@@ -179,7 +179,7 @@ export default function PreviewExperiencePage() {
               </span>
             </div>
 
-            <p className="mx-auto mt-8 max-w-[54ch] text-[1.02rem] leading-[1.85] text-plum-body">
+            <p className="mx-auto mt-8 max-w-[54ch] text-[1.02rem] leading-[1.6] text-plum-body">
               Your $250 Design Studio Consultation is a private appointment at the Fly
               Girl Design Studio at Formation — Dallas Cowboys World Headquarters in
               Frisco.
@@ -213,7 +213,7 @@ export default function PreviewExperiencePage() {
                   {step.n}
                 </span>
                 <h3 className="mt-4 text-xl leading-snug text-plum">{step.title}</h3>
-                <p className="mt-4 text-[0.92rem] leading-[1.8] text-plum-body">
+                <p className="mt-4 text-[0.92rem] leading-[1.55] text-plum-body">
                   {step.body}
                 </p>
               </Reveal>
@@ -241,11 +241,8 @@ export default function PreviewExperiencePage() {
               Let&apos;s create something unforgettable together.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button href="/begin-your-journey" variant="dark">
-                Reserve Your Design Studio Consultation
-              </Button>
-              <Button href="/begin-your-journey" variant="dark">
-                Begin Your Journey
+              <Button href={consultationHref} variant="dark">
+                Reserve Your Design Consultation
               </Button>
             </div>
             <div className="mt-11 text-[0.74rem] uppercase tracking-[0.22em] text-gold-ink">

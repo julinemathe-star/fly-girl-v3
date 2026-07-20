@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
 
       <section className="bg-warmwhite">
         <div className="mx-auto max-w-[68ch] px-[clamp(1.5rem,6vw,5rem)] pb-[clamp(4rem,8vw,7rem)]">
-          <Reveal className="space-y-10 leading-[1.85] text-plum-body">
+          <Reveal className="space-y-10 leading-[1.6] text-plum-body">
             <div>
               <h2 className="mb-3 font-serif text-2xl text-plum">Information We Collect</h2>
               <p>

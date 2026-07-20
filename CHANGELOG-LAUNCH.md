@@ -169,3 +169,42 @@ hierarchy and lazy loading intact.
   white for contrast over the dark hero video.)
 - Full QC re-run: all links (including the two new legal pages), assets,
   and syntax verified clean.
+
+
+---
+
+# Final Production Update (Launch Version)
+
+- Official business number (214) 937-9522 everywhere, clickable
+  (tel:+12149379522); previous numbers verified fully removed from the
+  codebase.
+- Typography: Marcellus headings + Manrope body site-wide via next/font.
+  Body Manrope Medium (500), ~18px on iPhone; buttons, navigation, and
+  contact details SemiBold (600); line spacing tightened ~15%; body text
+  contrast deepened (#31416A). Marcellus renders at its true weight (no
+  faux bold).
+- Homepage: single complete contact section with the specified wording
+  ("Luxury Design Studio / Located inside Formation at Dallas Cowboys
+  World Headquarters"), semibold contact details, and the primary button.
+  No duplicate address blocks anywhere.
+- Footer: logo, navigation, Privacy/Terms, copyright — nothing else.
+  (Social icons slot noted for when accounts are ready.)
+- Primary CTA unified: "Reserve Your Design Consultation" across hero,
+  homepage, Design Studio, and every consultation section; a stray
+  duplicate CTA pair on Preview Experience collapsed to one.
+- Stripe ready: all primary consultation buttons route through
+  consultationCheckoutUrl in src/lib/site.ts — paste one Payment Link and
+  the pay-first -> schedule flow goes live (instructions in README).
+- Before & After fixed: comparisons are now true labeled pairs
+  (BEFORE / CONCEPT RENDERING), side-by-side on desktop, stacked on
+  mobile. Elite European Auto shows the actual empty office beside its
+  matching executive office rendering; the unrelated residential interior
+  was removed from that project. Draft Night and Team Dinner are properly
+  paired with captions.
+- New collapsible FAQ (5 questions) on Begin Your Journey — accessible
+  accordion, editorial styling.
+- Testimonials system added: drop reviews into src/lib/testimonials.ts
+  and the homepage section appears; hidden until real reviews exist so
+  no placeholder content ships.
+- QC: old numbers gone, every link and asset verified, all files pass
+  syntax checks, images lazy-load, contact links clickable.

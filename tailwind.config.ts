@@ -29,13 +29,13 @@ const config: Config = {
         plum: {
           DEFAULT: "#1C2B4A", // rich navy — headings, anchors
           soft: "#33436B",    // deepened navy for premium body copy
-          body: "#3C4C72",    // editorial body copy on ivory (WCAG AA)
+          body: "#31416A",    // editorial body copy on ivory (WCAG AA)
           deep: "#0F1930",    // near-midnight navy — footer, dark surfaces
         },
         navy: {
           DEFAULT: "#1C2B4A",
           soft: "#33436B",
-          body: "#3C4C72",
+          body: "#31416A",
           deep: "#0F1930",
         },
         ink: "#26314A",

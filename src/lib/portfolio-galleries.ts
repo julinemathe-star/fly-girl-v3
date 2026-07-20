@@ -3,6 +3,12 @@ export type PortfolioImage = {
   alt: string;
 };
 
+export type ConceptPair = {
+  before: PortfolioImage;
+  concept: PortfolioImage;
+  caption?: string;
+};
+
 export type CaseStudy = {
   slug: string;
   title: string;
@@ -12,6 +18,8 @@ export type CaseStudy = {
   images: PortfolioImage[];
   /** Which category gallery this belongs to, e.g. "little-luxe". Used to link from the category intro to its case studies. */
   category: string;
+  /** Before → Concept Rendering comparisons, always displayed as labeled pairs. */
+  pairs?: ConceptPair[];
 };
 
 export type CategoryGallery = {
@@ -298,22 +306,29 @@ export const caseStudies: CaseStudy[] = [
     category: "sports-hospitality",
     summary:
       "An empty marble hall becomes a black-and-gold Draft Night, and a corporate boardroom becomes a championship team dinner — sports hospitality designed around a team's identity.",
-    images: [
+    images: [],
+    pairs: [
       {
-        src: "/media/concepts/sports/draft-party-concept.jpg",
-        alt: "Design Concept — a black and gold Draft Night lounge with illuminated backdrop, styled cocktail tables, and fictional team branding",
+        before: {
+          src: "/media/concepts/sports/draft-party-before.jpg",
+          alt: "Before — the empty marble event space prior to the Draft Night design concept",
+        },
+        concept: {
+          src: "/media/concepts/sports/draft-party-concept.jpg",
+          alt: "Concept rendering — a black and gold Draft Night lounge with illuminated backdrop and styled cocktail tables",
+        },
+        caption: "Draft Night — an empty marble hall becomes a black-and-gold arrival moment.",
       },
       {
-        src: "/media/concepts/sports/draft-party-before.jpg",
-        alt: "Before — the empty marble event space prior to the Draft Night design concept",
-      },
-      {
-        src: "/media/concepts/sports/team-dinner-concept.jpg",
-        alt: "Design Concept — a candlelit team dinner with black and gold place settings, greenery centerpieces, and motivational styling",
-      },
-      {
-        src: "/media/concepts/sports/team-dinner-before.jpg",
-        alt: "Before — the executive boardroom prior to the team dinner design concept",
+        before: {
+          src: "/media/concepts/sports/team-dinner-before.jpg",
+          alt: "Before — the executive boardroom prior to the team dinner design concept",
+        },
+        concept: {
+          src: "/media/concepts/sports/team-dinner-concept.jpg",
+          alt: "Concept rendering — a candlelit team dinner with black and gold place settings and greenery centerpieces",
+        },
+        caption: "Team Dinner — a corporate boardroom becomes a championship evening.",
       },
     ],
   },
@@ -326,20 +341,21 @@ export const caseStudies: CaseStudy[] = [
       "An executive office transformation inspired by our Elite European Auto project, and refined luxury interiors composed with an editorial eye.",
     images: [
       {
-        src: "/media/concepts/styled-spaces/executive-office-concept.jpg",
-        alt: "Design Concept — a styled executive office with automotive art, layered shelving, warm lighting, and refined details",
-      },
-      {
-        src: "/media/concepts/styled-spaces/executive-office-before.jpg",
-        alt: "Before — the unstyled executive office prior to the design concept",
-      },
-      {
         src: "/media/concepts/styled-spaces/executive-lounge-concept.jpg",
-        alt: "Design Concept — a moody luxury lounge with leather seating, fireplace, and considered styling",
+        alt: "Concept rendering — a moody executive lounge with leather seating, fireplace, and considered styling",
       },
+    ],
+    pairs: [
       {
-        src: "/media/concepts/staging/living-room-after-concept.jpg",
-        alt: "Design Concept — a bright, editorial living room styled in warm ivory with layered textures",
+        before: {
+          src: "/media/concepts/styled-spaces/executive-office-before.jpg",
+          alt: "Before — the actual empty executive office at Elite European Auto prior to the design concept",
+        },
+        concept: {
+          src: "/media/concepts/styled-spaces/executive-office-concept.jpg",
+          alt: "Concept rendering — the matching executive office design with automotive art, layered shelving, and warm lighting",
+        },
+        caption: "Elite European Auto — the actual empty office, and its executive office concept rendering.",
       },
     ],
   },

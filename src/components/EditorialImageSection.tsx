@@ -33,7 +33,7 @@ export default function EditorialImageSection({
       <h2 className={`${eyebrow ? "mt-6" : ""} text-[clamp(2rem,3.6vw,3.1rem)] leading-[1.15] text-plum`}>
         {heading}
       </h2>
-      <div className="mx-auto mt-7 max-w-[58ch] space-y-5 text-[1.02rem] leading-[1.85] text-plum-body">
+      <div className="mx-auto mt-7 max-w-[58ch] space-y-5 text-[1.02rem] leading-[1.6] text-plum-body">
         {body.map((p, i) => (
           <p key={i}>{p}</p>
         ))}

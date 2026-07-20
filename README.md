@@ -172,3 +172,27 @@ one service category:
 
 The scan happens at build time (`src/lib/portfolio-scan.ts`), so republish on
 Netlify after adding photos.
+
+
+## Stripe checkout (Reserve Your Design Consultation)
+
+Every primary consultation button points to one place: `consultationCheckoutUrl`
+in `src/lib/site.ts`. When your Stripe Payment Link is ready:
+
+1. In Stripe: Payment Links -> create a link for the Design Consultation.
+   Apple Pay, Google Pay, and all major cards are handled automatically on
+   Stripe's secure hosted page (no card data ever touches this website).
+2. Under the link's confirmation page settings, choose "redirect to your
+   website" and paste your scheduling calendar URL (Calendly, etc.) — this
+   creates the pay-first, then-schedule flow.
+3. Paste the link (https://buy.stripe.com/...) into `consultationCheckoutUrl`
+   in `src/lib/site.ts`, push, and every button switches over site-wide.
+
+Until the link is added, the buttons open the Begin Your Journey inquiry form.
+
+## Testimonials
+
+Add each client review to `src/lib/testimonials.ts` (quote, name, optional
+context). The homepage "Kind Words" section appears automatically once at
+least one review exists — it stays hidden while the list is empty, so no
+placeholder text ever ships.

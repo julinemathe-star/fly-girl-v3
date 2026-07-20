@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import ExperienceRow from "@/components/ExperienceRow";
 import JourneySection from "@/components/sections/JourneySection";
 import { experiences } from "@/lib/experiences";
-import { site } from "@/lib/site";
+import { site, consultationHref } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Experiences",
@@ -91,8 +91,8 @@ export default function ExperiencesPage() {
               Every unforgettable celebration begins with a conversation. We&apos;d love
               to learn about your vision and create something designed exclusively for you.
             </p>
-            <Button href="/begin-your-journey" variant="primary">
-              Begin Your Journey
+            <Button href={consultationHref} variant="primary">
+              Reserve Your Design Consultation
             </Button>
             <div className="mt-11 text-[0.74rem] uppercase tracking-[0.22em] text-champagne">
               <a

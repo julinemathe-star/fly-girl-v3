@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
 import CrewCard from "@/components/CrewCard";
 import { crew } from "@/lib/crew";
-import { site } from "@/lib/site";
+import { site, consultationHref } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",
@@ -79,7 +79,7 @@ export default function AboutPage() {
               </p>
             </Reveal>
 
-            <Reveal delay={0.14} className="mt-10 space-y-7 text-[1.05rem] leading-[1.85] text-plum-body">
+            <Reveal delay={0.14} className="mt-10 space-y-7 text-[1.05rem] leading-[1.6] text-plum-body">
               <p>
                 After traveling the world as a Flight Attendant for more than 25
                 years, I developed an eye for luxury hospitality, exceptional guest
@@ -163,12 +163,12 @@ export default function AboutPage() {
             <h2 className="mb-8 mt-6 text-[clamp(2rem,4vw,3.2rem)] leading-[1.2] text-plum">
               Every Great Journey Begins With a First Step.
             </h2>
-            <p className="mx-auto mb-10 max-w-[52ch] leading-[1.85] text-plum-body">
+            <p className="mx-auto mb-10 max-w-[52ch] leading-[1.6] text-plum-body">
               Whether you&apos;re celebrating around the corner or across the world, we&apos;d
               be honored to design something unforgettable together.
             </p>
-            <Button href="/begin-your-journey" variant="dark">
-              Begin Your Journey
+            <Button href={consultationHref} variant="dark">
+              Reserve Your Design Consultation
             </Button>
             <div className="mt-11 text-[0.74rem] uppercase tracking-[0.22em] text-gold-ink">
               <a

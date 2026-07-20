@@ -59,12 +59,12 @@ export default function ServicesPage() {
               <h2 className="mt-5 text-[clamp(2rem,3.6vw,3.1rem)] leading-[1.15] text-plum">
                 Home Staging
               </h2>
-              <p className="mt-5 max-w-[52ch] leading-[1.85] text-plum-body">
+              <p className="mt-5 max-w-[52ch] leading-[1.6] text-plum-body">
                 Fly Girl helps homeowners, Realtors, and builders prepare homes for
                 market by thoughtfully styling interiors to create emotional buyer
                 connections.
               </p>
-              <p className="mt-4 max-w-[52ch] leading-[1.85] text-plum-body">
+              <p className="mt-4 max-w-[52ch] leading-[1.6] text-plum-body">
                 Buyers don&apos;t fall in love with square footage — they fall in love
                 with the life they can picture inside it. We stage every room so that
                 the moment a buyer walks in, the home already feels like theirs.
@@ -109,7 +109,7 @@ export default function ServicesPage() {
             <h2 className="mt-5 text-[clamp(2rem,3.6vw,3.1rem)] leading-[1.15] text-plum">
               Virtual Staging
             </h2>
-            <p className="mx-auto mt-5 max-w-[56ch] leading-[1.85] text-plum-body">
+            <p className="mx-auto mt-5 max-w-[56ch] leading-[1.6] text-plum-body">
               Send us photos of an empty or outdated room, and Fly Girl digitally
               reimagines the space before a single piece of furniture is purchased.
               Perfect for builders, luxury Realtors, developers, vacation rentals,
@@ -184,7 +184,7 @@ export default function ServicesPage() {
                     >
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <p className="leading-[1.75] text-plum-body">{step}</p>
+                    <p className="leading-[1.5] text-plum-body">{step}</p>
                   </li>
                 ))}
               </ol>

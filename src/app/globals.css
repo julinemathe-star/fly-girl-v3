@@ -16,7 +16,13 @@
   }
 
   body {
-    @apply bg-warmwhite text-ink font-sans font-light leading-relaxed;
+    @apply bg-warmwhite text-ink font-sans font-medium leading-[1.6];
+    font-size: 1.125rem; /* ~18px — comfortable on iPhone */
+  }
+  @media (min-width: 768px) {
+    body {
+      font-size: 1.0625rem;
+    }
     /* Guard against any stray element creating sideways scroll on mobile */
     overflow-x: clip;
   }
@@ -24,13 +30,13 @@
   /* V2: primary headings slightly bolder for stronger editorial presence */
   h1,
   h2 {
-    @apply font-serif font-semibold leading-tight;
+    @apply font-serif font-normal leading-tight;
     letter-spacing: 0.005em;
   }
 
   h3,
   h4 {
-    @apply font-serif font-medium leading-tight;
+    @apply font-serif font-normal leading-tight;
     letter-spacing: 0.005em;
   }
 

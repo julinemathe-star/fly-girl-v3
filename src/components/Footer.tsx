@@ -1,42 +1,37 @@
+import Image from "next/image";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { navLinks, site } from "@/lib/site";
 
 /**
- * Minimal footer — one consistent close for every page.
- * Studio identity, address, contact, legal links, copyright. Nothing repeated.
+ * Minimal footer: logo, navigation, legal, copyright.
+ * Contact details live in the homepage contact section and on /contact —
+ * never duplicated here.
  */
 export default function Footer() {
   return (
     <footer className="bg-[#071225] text-warmwhite">
-      <div className="mx-auto max-w-shell px-6 py-[clamp(4rem,8vw,6.5rem)] text-center md:px-[clamp(2rem,6vw,5rem)]">
-        <p className="font-serif text-[1.35rem] text-champagne">{site.name}</p>
+      <div className="mx-auto max-w-shell px-6 py-[clamp(3.5rem,7vw,5.5rem)] text-center md:px-[clamp(2rem,6vw,5rem)]">
+        <Image
+          src="/brand/fg-mark.png"
+          alt={`${site.name} logo`}
+          width={140}
+          height={75}
+          className="mx-auto h-auto w-[120px] opacity-95"
+        />
 
-        <p className="mt-9 text-[0.68rem] font-medium uppercase tracking-[0.34em] text-gold">
-          Design Studio
-        </p>
-        <div className="mt-5 space-y-1 text-[0.95rem] leading-relaxed text-warmwhite/75">
-          <p>{site.studioName}</p>
-          <p>{site.streetAddress}</p>
-          <p>{site.cityStateZip}</p>
-        </div>
-        <p className="mt-4 text-[0.72rem] uppercase tracking-[0.2em] text-gold">
-          {site.appointmentLine}
-        </p>
+        <nav aria-label="Footer" className="mt-9">
+          <ul className="flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-warmwhite/70">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="transition hover:text-champagne">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-        <div className="mt-8 space-y-2 text-[0.95rem] text-warmwhite/85">
-          <p>
-            <a href={`tel:${site.phoneHref}`} className="transition hover:text-champagne">
-              &#128222;&nbsp; {site.phone}
-            </a>
-          </p>
-          <p>
-            <a href={`mailto:${site.email}`} className="transition hover:text-champagne">
-              &#9993;&#65039;&nbsp; {site.email}
-            </a>
-          </p>
-        </div>
-
-        <div className="mt-10 flex items-center justify-center gap-6 text-[0.72rem] uppercase tracking-[0.18em] text-warmwhite/60">
+        <div className="mt-8 flex items-center justify-center gap-6 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-warmwhite/50">
           <Link href="/privacy-policy" className="transition hover:text-champagne">
             Privacy Policy
           </Link>

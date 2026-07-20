@@ -8,6 +8,7 @@ import {
   previewFee,
 } from "@/lib/journey";
 import { site } from "@/lib/site";
+import Faq from "@/components/Faq";
 
 export const metadata: Metadata = {
   title: "Begin Your Journey",
@@ -41,7 +42,7 @@ export default function BeginYourJourneyPage() {
             <h1 className="mt-5 text-[clamp(2.4rem,5.5vw,4.4rem)] leading-[1.06] text-white text-shadow-luxe">
               Begin Your Journey
             </h1>
-            <p className="mx-auto mt-7 max-w-[60ch] text-[1.05rem] leading-[1.8] text-white/90 text-shadow-soft">
+            <p className="mx-auto mt-7 max-w-[60ch] text-[1.05rem] leading-[1.55] text-white/90 text-shadow-soft">
               Every unforgettable celebration begins with a conversation. Whether
               you&apos;re planning an intimate gathering, destination wedding, luxury
               birthday, corporate event, or beautifully styled interior, we&apos;d be
@@ -59,7 +60,7 @@ export default function BeginYourJourneyPage() {
             <h2 className="mt-6 text-[clamp(2rem,3.6vw,3.1rem)] leading-[1.15] text-plum">
               Your First-Class Consultation
             </h2>
-            <div className="mx-auto mt-7 max-w-[58ch] space-y-5 text-[1.02rem] leading-[1.85] text-plum-body">
+            <div className="mx-auto mt-7 max-w-[58ch] space-y-5 text-[1.02rem] leading-[1.6] text-plum-body">
               <p>Every Fly Girl experience begins with understanding your vision.</p>
               <p>
                 We&apos;ll learn about your celebration, your style, your priorities, and
@@ -94,7 +95,7 @@ export default function BeginYourJourneyPage() {
                   className="mx-auto mb-4 h-9 w-9 rounded-full border border-gold/50"
                 />
                 <h3 className="text-[1.1rem] leading-snug text-plum">{item.title}</h3>
-                <p className="mt-3 text-[0.88rem] leading-[1.75] text-plum-body">
+                <p className="mt-3 text-[0.88rem] leading-[1.5] text-plum-body">
                   {item.body}
                 </p>
               </Reveal>
@@ -112,10 +113,10 @@ export default function BeginYourJourneyPage() {
                 {previewFee.title}
               </span>
               <span className="font-serif text-3xl text-plum">{previewFee.price}</span>
-              <p className="mt-2 text-[0.95rem] leading-[1.8] text-plum-body">
+              <p className="mt-2 text-[0.95rem] leading-[1.55] text-plum-body">
                 {previewFee.body}
               </p>
-              <p className="text-[0.95rem] leading-[1.8] text-plum-body">
+              <p className="text-[0.95rem] leading-[1.55] text-plum-body">
                 {previewFee.note}
               </p>
             </div>
@@ -127,7 +128,7 @@ export default function BeginYourJourneyPage() {
       <section id="inquiry-form" className="bg-gradient-to-b from-ivory to-warmwhite">
         <div className="section-shell">
           <Reveal className="mx-auto mb-[clamp(3.5rem,7vw,5.5rem)] max-w-[680px] text-center">
-            <span className="eyebrow eyebrow-ink">Schedule Your Consultation</span>
+            <span className="eyebrow eyebrow-ink">Reserve Your Design Consultation</span>
             <h2 className="mt-6 text-[clamp(2rem,3.6vw,3.1rem)] leading-[1.15] text-plum">
               Tell Us About Your Celebration
             </h2>
@@ -176,6 +177,7 @@ export default function BeginYourJourneyPage() {
           </Reveal>
         </div>
       </section>
+      <Faq />
     </>
   );
 }

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
-import { site } from "@/lib/site";
+import { site, consultationHref } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Visit Our Design Studio",
@@ -62,13 +62,13 @@ export default function DesignStudioPage() {
               <h2 className="mt-4 text-[clamp(2rem,3.6vw,3.1rem)] leading-[1.15] text-plum">
                 The Design Studio Consultation
               </h2>
-              <p className="mt-6 max-w-[52ch] text-[1.02rem] leading-[1.8] text-plum-body">
+              <p className="mt-6 max-w-[52ch] text-[1.02rem] leading-[1.55] text-plum-body">
                 Clients visit by appointment to review, touch, compare, and approve
                 the key elements of their project before installation day —
                 from the design concept, palette, and linens to table styling,
                 welcome gift samples, packaging, menus, and signage.
               </p>
-              <p className="mt-5 max-w-[52ch] text-[1.02rem] leading-[1.8] text-plum-body">
+              <p className="mt-5 max-w-[52ch] text-[1.02rem] leading-[1.55] text-plum-body">
                 Our studio at {site.studioName}, within the Dallas Cowboys World
                 Headquarters, was chosen intentionally — a setting that reflects the
                 hospitality, design, and executive standard we bring to every
@@ -94,8 +94,8 @@ export default function DesignStudioPage() {
               </div>
 
               <div className="mt-10">
-                <Button href="/begin-your-journey" variant="dark">
-                  Schedule Your Consultation
+                <Button href={consultationHref} variant="dark">
+                  Reserve Your Design Consultation
                 </Button>
               </div>
             </Reveal>

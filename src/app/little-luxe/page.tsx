@@ -44,7 +44,7 @@ export default function LittleLuxePage() {
             <h1 className="mt-5 text-[clamp(2.3rem,5vw,4rem)] leading-[1.08] text-white text-shadow-luxe">
               Where a Child&apos;s Wonder Meets True Luxury
             </h1>
-            <p className="mx-auto mt-7 max-w-[58ch] text-[1.05rem] leading-[1.8] text-white/90 text-shadow-soft">
+            <p className="mx-auto mt-7 max-w-[58ch] text-[1.05rem] leading-[1.55] text-white/90 text-shadow-soft">
               Imaginative children&apos;s celebrations, elevated. Playful worlds designed
               with the same artistry and attention as our most refined events.
             </p>
@@ -65,7 +65,7 @@ export default function LittleLuxePage() {
             <h2 className="mt-6 text-[clamp(2rem,3.6vw,3.1rem)] leading-[1.15] text-plum">
               Elevated, Never Ordinary
             </h2>
-            <div className="mx-auto mt-7 max-w-[58ch] space-y-5 text-[1.02rem] leading-[1.85] text-plum-body">
+            <div className="mx-auto mt-7 max-w-[58ch] space-y-5 text-[1.02rem] leading-[1.6] text-plum-body">
               <p>
                 Children&apos;s celebrations deserve the same thoughtful design as any
                 Fly Girl experience — considered color, beautiful styling, and details
@@ -119,7 +119,7 @@ export default function LittleLuxePage() {
               <p className="mt-2 font-sans text-[0.72rem] uppercase tracking-luxe text-gold-ink">
                 Jr. Creative Assistant, Kids Department
               </p>
-              <div className="mt-6 space-y-5 text-[1.02rem] leading-[1.85] text-plum-body">
+              <div className="mt-6 space-y-5 text-[1.02rem] leading-[1.6] text-plum-body">
                 {lauren.bio.map((p, i) => (
                   <p key={i}>{p}</p>
                 ))}
@@ -148,7 +148,7 @@ export default function LittleLuxePage() {
                 className="rounded-[4px] border border-gold/25 bg-gradient-to-b from-white to-ivory/40 p-8 shadow-media"
               >
                 <h3 className="text-[1.4rem] leading-snug text-plum">{item.title}</h3>
-                <p className="mt-3 text-[0.95rem] leading-[1.8] text-plum-body">
+                <p className="mt-3 text-[0.95rem] leading-[1.55] text-plum-body">
                   {item.body}
                 </p>
               </Reveal>
@@ -185,7 +185,7 @@ export default function LittleLuxePage() {
               </span>
             </div>
 
-            <p className="mx-auto mt-8 max-w-[54ch] text-[1.02rem] leading-[1.85] text-plum-body">
+            <p className="mx-auto mt-8 max-w-[54ch] text-[1.02rem] leading-[1.6] text-plum-body">
               {littleLuxeInvestment.summary}
             </p>
           </Reveal>

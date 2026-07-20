@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "@/components/Button";
-import { site } from "@/lib/site";
+import { site, consultationHref } from "@/lib/site";
 
 /**
  * Launch hero.
@@ -61,17 +61,17 @@ export default function Hero() {
           Fly Girl &nbsp;&bull;&nbsp; Events &amp; Design
         </p>
 
-        <h1 className="text-gold-gradient mx-auto mt-3 max-w-[16ch] animate-hero-title font-serif text-[1.9rem] font-semibold uppercase leading-[1.14] tracking-[0.08em]">
+        <h1 className="text-gold-gradient mx-auto mt-3 max-w-[16ch] animate-hero-title font-serif text-[1.85rem] uppercase leading-[1.14] tracking-[0.08em]">
           {site.heroStatement}
         </h1>
 
-        <p className="mx-auto mt-4 max-w-[36ch] animate-hero-sub text-[0.95rem] font-normal leading-[1.7] text-warmwhite/85">
+        <p className="mx-auto mt-4 max-w-[36ch] animate-hero-sub text-[0.95rem] font-normal leading-[1.5] text-warmwhite/85">
           {site.heroSub}
         </p>
 
         <div className="mx-auto mt-7 flex max-w-[340px] animate-hero-actions flex-col">
-          <Button href="/begin-your-journey" variant="primary" className="w-full">
-            Schedule Your Consultation
+          <Button href={consultationHref} variant="primary" className="w-full">
+            Reserve Your Design Consultation
           </Button>
         </div>
       </div>
@@ -120,7 +120,7 @@ export default function Hero() {
           Fly Girl &nbsp;&bull;&nbsp; Events &amp; Design
         </p>
 
-        <h1 className="text-gold-gradient mt-3 max-w-[18ch] animate-hero-title font-serif text-[clamp(1.7rem,3.6vw,2.7rem)] font-semibold uppercase leading-[1.14] tracking-[0.12em]">
+        <h1 className="text-gold-gradient mt-3 max-w-[18ch] animate-hero-title font-serif text-[clamp(1.7rem,3.6vw,2.7rem)] uppercase leading-[1.14] tracking-[0.12em]">
           {site.heroStatement}
         </h1>
 
@@ -133,7 +133,7 @@ export default function Hero() {
           <span className="h-px flex-1 bg-gradient-to-l from-transparent to-gold/80" />
         </div>
 
-        <p className="mt-5 max-w-[54ch] animate-hero-sub text-[clamp(1.02rem,1.5vw,1.12rem)] font-medium leading-[1.75] tracking-[0.01em] text-white text-shadow-luxe">
+        <p className="mt-5 max-w-[54ch] animate-hero-sub text-[clamp(1.02rem,1.5vw,1.12rem)] font-medium leading-[1.5] tracking-[0.01em] text-white text-shadow-luxe">
           {site.heroSub}
         </p>
 
@@ -142,8 +142,8 @@ export default function Hero() {
         </p>
 
         <div className="flex animate-hero-actions flex-row flex-wrap justify-start gap-[1.1rem]">
-          <Button href="/begin-your-journey" variant="primary" className="w-auto">
-            Schedule Your Consultation
+          <Button href={consultationHref} variant="primary" className="w-auto">
+            Reserve Your Design Consultation
           </Button>
         </div>
       </div>

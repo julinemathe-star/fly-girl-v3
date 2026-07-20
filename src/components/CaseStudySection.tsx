@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Reveal from "@/components/Reveal";
 import Lightbox from "@/components/Lightbox";
+import BeforeAfter from "@/components/BeforeAfter";
 import type { CaseStudy } from "@/lib/portfolio-galleries";
 
 type CaseStudySectionProps = {
@@ -20,10 +21,12 @@ type CaseStudySectionProps = {
 export default function CaseStudySection({ study, tone = "warmwhite" }: CaseStudySectionProps) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
-  if (study.images.length === 0) return null;
+  const pairs = study.pairs ?? [];
+  if (study.images.length === 0 && pairs.length === 0) return null;
 
   const bg = tone === "ivory" ? "bg-gradient-to-b from-ivory to-warmwhite" : "bg-warmwhite";
-  const [hero, ...rest] = study.images;
+  const hero = study.images[0] ?? null;
+  const rest = study.images.slice(1);
 
   return (
     <section id={`story-${study.slug}`} className={`${bg} scroll-mt-24`}>
@@ -36,7 +39,25 @@ export default function CaseStudySection({ study, tone = "warmwhite" }: CaseStud
           <p className="mx-auto mt-4 max-w-[58ch] text-plum-body">{study.summary}</p>
         </Reveal>
 
+        {/* Before → Concept Rendering pairs, always labeled, never stacked apart */}
+        {pairs.length > 0 ? (
+          <div className="mb-8 space-y-10">
+            {pairs.map((pair) => (
+              <BeforeAfter
+                key={pair.concept.src}
+                beforeSrc={pair.before.src}
+                beforeAlt={pair.before.alt}
+                afterSrc={pair.concept.src}
+                afterAlt={pair.concept.alt}
+                afterLabel="Concept Rendering"
+                caption={pair.caption}
+              />
+            ))}
+          </div>
+        ) : null}
+
         {/* Hero image, full width — clickable */}
+        {hero ? (
         <Reveal className="mb-4">
           <button
             type="button"
@@ -54,6 +75,7 @@ export default function CaseStudySection({ study, tone = "warmwhite" }: CaseStud
             />
           </button>
         </Reveal>
+        ) : null}
 
         {/* Remaining images, editorial grid — each clickable */}
         {rest.length > 0 ? (

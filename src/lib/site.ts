@@ -3,6 +3,18 @@ export const site = {
   shortName: "Fly Girl",
   tagline: "Luxury Event Designer & Creative Director",
   headline: "Creating unforgettable celebrations and beautifully styled spaces.",
+  /**
+   * Stripe Payment Link for the paid Design Consultation.
+   * Paste the live Stripe link here (https://buy.stripe.com/...) and every
+   * "Reserve Your Design Consultation" button site-wide will send clients to
+   * the secure Stripe-hosted checkout (Apple Pay, Google Pay, and all major
+   * cards are handled by Stripe automatically). Until it's added, buttons
+   * open the private inquiry form instead. In Stripe, set the Payment Link's
+   * confirmation page to redirect to your scheduling calendar so clients pay
+   * first, then choose their appointment time.
+   */
+  consultationCheckoutUrl: "",
+
   /** One-line positioning shown across the site. */
   positioning: "Luxury Event Designer",
   /** Hero headline — the studio's primary promise, stated plainly. */
@@ -20,8 +32,8 @@ export const site = {
     "Fly Girl Events & Design is a luxury creative studio in Frisco, Texas. Luxury event designer for corporate and executive experiences, styled spaces, luxury property staging, welcome gifts, destination experiences, and private celebrations.",
   url: "https://flygirl.events",
   email: "juline@flygirl.events",
-  phone: "(972) 512-8781",
-  phoneHref: "+19725128781",
+  phone: "(214) 937-9522",
+  phoneHref: "+12149379522",
   addressLine1: "Design Studio at Formation",
   addressLine2: "Dallas Cowboys World Headquarters",
   addressLine3: "Frisco, Texas",
@@ -48,3 +60,8 @@ export const navLinks: NavLink[] = [
   { label: "Portfolio", href: "/portfolio" },
   { label: "Contact", href: "/contact" },
 ];
+
+/** Where every primary consultation button points: Stripe checkout when
+ * configured, the inquiry form until then. */
+export const consultationHref: string =
+  site.consultationCheckoutUrl || "/begin-your-journey";

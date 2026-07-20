@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Hero from "@/components/Hero";
 import Reveal from "@/components/Reveal";
+import Testimonials from "@/components/Testimonials";
 import Button from "@/components/Button";
-import { site } from "@/lib/site";
+import { site, consultationHref } from "@/lib/site";
 
 /**
  * Homepage — confidence through simplicity.
@@ -45,17 +46,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Contact + the single call to action */}
+      <Testimonials />
+
+      {/* The one complete contact section */}
       <section className="bg-gradient-to-b from-ivory to-warmwhite">
         <div className="mx-auto max-w-[640px] px-[clamp(1.5rem,6vw,5rem)] py-[clamp(5rem,10vw,8.5rem)] text-center">
           <Reveal>
             <h2 className="font-serif text-[clamp(1.9rem,3.4vw,2.8rem)] leading-[1.15] text-plum">
               {site.name}
             </h2>
+            <p className="mt-3 text-[0.78rem] uppercase tracking-luxe text-gold-ink">
+              Luxury Design Studio
+            </p>
 
-            <div className="mt-8 space-y-1 text-plum-body">
-              <p>Design Studio located at {site.studioName}</p>
-              <p>Dallas Cowboys World Headquarters</p>
+            <div className="mt-8 space-y-1 font-semibold text-plum-body">
+              <p>Located inside {site.studioName}</p>
+              <p>at Dallas Cowboys World Headquarters</p>
               <p>5 Cowboys Way</p>
               <p>Suite 300</p>
               <p>Frisco, Texas 75034</p>
@@ -65,7 +71,7 @@ export default function HomePage() {
               {site.appointmentLine}
             </p>
 
-            <div className="mt-8 space-y-2 text-plum-body">
+            <div className="mt-8 space-y-2 font-semibold text-plum-body">
               <p>
                 Phone:{" "}
                 <a href={`tel:${site.phoneHref}`} className="text-plum transition-colors hover:text-gold-ink">
@@ -81,13 +87,14 @@ export default function HomePage() {
             </div>
 
             <div className="mt-11">
-              <Button href="/begin-your-journey" variant="dark">
-                Schedule Your Consultation
+              <Button href={consultationHref} variant="dark">
+                Reserve Your Design Consultation
               </Button>
             </div>
           </Reveal>
         </div>
       </section>
+
     </>
   );
 }

@@ -24,7 +24,7 @@ export default function ConceptsPage() {
       <section className="bg-warmwhite">
         <div className="section-shell pt-0">
           <Reveal className="mx-auto mb-[clamp(3rem,6vw,4.5rem)] max-w-[680px] rounded-[4px] border border-gold/25 bg-gradient-to-b from-ivory to-warmwhite p-8 text-center shadow-media">
-            <p className="text-[0.95rem] leading-[1.8] text-plum-body">
+            <p className="text-[0.95rem] leading-[1.55] text-plum-body">
               The images on this page are AI-generated concept renderings created to
               explore design direction — not photographs of completed Fly Girl
               projects. For real, completed work, visit our{" "}

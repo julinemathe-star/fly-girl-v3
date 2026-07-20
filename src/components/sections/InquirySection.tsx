@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
-import { site } from "@/lib/site";
+import { site, consultationHref } from "@/lib/site";
 
 export default function InquirySection() {
   return (
@@ -22,8 +22,8 @@ export default function InquirySection() {
             We welcome a limited number of commissions each season to protect the level
             of attention every experience deserves. Tell us about yours.
           </p>
-          <Button href="/begin-your-journey" variant="primary">
-            Begin Your Journey
+          <Button href={consultationHref} variant="primary">
+            Reserve Your Design Consultation
           </Button>
           <div className="mt-11 text-[0.74rem] uppercase tracking-[0.22em] text-champagne">
             <a
