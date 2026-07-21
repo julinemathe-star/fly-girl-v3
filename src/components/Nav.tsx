@@ -84,7 +84,7 @@ export default function Nav() {
       >
         <Link
           href="/"
-          aria-label={`${site.name} — home`}
+          aria-label={`${site.name}, home`}
           className="flex items-center leading-none"
           onClick={() => setOpen(false)}
         >
@@ -125,7 +125,7 @@ export default function Nav() {
           </Link>
         </nav>
 
-        {/* Mobile toggle — 44px tap target */}
+        {/* Mobile toggle, 44px tap target */}
         <button
           type="button"
           className="-mr-2 flex h-11 w-11 flex-col items-center justify-center gap-[5px] md:hidden"
@@ -155,12 +155,12 @@ export default function Nav() {
       {/*
         Mobile menu lives OUTSIDE the header. The header's backdrop-blur
         creates a CSS containing block that breaks fixed positioning of
-        anything inside it — which is why the old menu rendered as
+        anything inside it, which is why the old menu rendered as
         transparent floating links. As a sibling, this panel always spans
         the true viewport.
       */}
 
-      {/* Scrim — tap anywhere outside the panel to close */}
+      {/* Scrim, tap anywhere outside the panel to close */}
       <div
         aria-hidden="true"
         onClick={() => setOpen(false)}
@@ -196,6 +196,12 @@ export default function Nav() {
           >
             Plan Your Event
           </Link>
+          <a
+            href={`tel:${site.phoneHref}`}
+            className="mt-4 text-[0.95rem] tracking-[0.08em] text-plum-body transition-colors active:text-gold-deep"
+          >
+            {site.phone}
+          </a>
         </div>
       </nav>
     </>

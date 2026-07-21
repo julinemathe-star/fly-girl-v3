@@ -7,11 +7,11 @@ type FaqItem = { q: string; a: string };
 const items: FaqItem[] = [
   {
     q: "What is included in the Design Consultation?",
-    a: "A private working session with Juline — at the Design Studio or virtually — where we walk through your vision, venue or space, palette, and priorities, and leave you with a clear design direction and next steps for your event or project.",
+    a: "A private working session with Juline, at the Design Studio or virtually, where we walk through your vision, venue or space, palette, and priorities, and leave you with a clear design direction and next steps for your event or project.",
   },
   {
     q: "Is the consultation fee applied toward my event?",
-    a: "Yes — when you move forward with a Fly Girl engagement, your consultation fee is credited toward your design investment.",
+    a: "Yes, when you move forward with a Fly Girl engagement, your consultation fee is credited toward your design investment.",
   },
   {
     q: "Do you travel?",
@@ -23,12 +23,12 @@ const items: FaqItem[] = [
   },
   {
     q: "How far in advance should I book?",
-    a: "Signature events are best reserved eight to twelve weeks ahead — earlier for peak seasons and destination experiences. Welcome gifts and styled details can often be accommodated on shorter timelines.",
+    a: "Signature events are best reserved eight to twelve weeks ahead, earlier for peak seasons and destination experiences. Welcome gifts and styled details can often be accommodated on shorter timelines.",
   },
 ];
 
 /**
- * Collapsible FAQ — a quiet, accessible accordion in the editorial style.
+ * Collapsible FAQ, a quiet, accessible accordion in the editorial style.
  */
 export default function Faq() {
   const [open, setOpen] = useState<number | null>(0);

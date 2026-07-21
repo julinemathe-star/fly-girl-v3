@@ -35,7 +35,7 @@ export default function InquiryForm() {
     const date = String(data.get("date") || "");
     const details = String(data.get("details") || "");
 
-    const subject = `Event Inquiry — ${type || "Celebration"} — ${name}`;
+    const subject = `Event Inquiry, ${type || "Celebration"}, ${name}`;
     const body = [
       `Name: ${name}`,
       `Email: ${email}`,
@@ -113,7 +113,7 @@ export default function InquiryForm() {
         </button>
         {sent ? (
           <p role="status" className="mt-4 text-[0.82rem] text-plum-soft">
-            Thank you — your email draft is ready to send. If it didn&apos;t open, reach
+            Thank you, your email draft is ready to send. If it didn&apos;t open, reach
             us directly at{" "}
             <a href={`mailto:${site.email}`} className="text-gold-ink underline">
               {site.email}

@@ -7,7 +7,7 @@ import { site, consultationHref } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Visit Our Design Studio",
   description:
-    "Visit the Fly Girl Design Studio at Formation — Dallas Cowboys World Headquarters, Frisco, Texas. By appointment only. Review, touch, compare, and approve every key element of your project.",
+    "Visit the Fly Girl Design Studio at Formation, Dallas Cowboys World Headquarters, Frisco, Texas. By appointment only. Review, touch, compare, and approve every key element of your project.",
 };
 
 const directionsUrl =
@@ -17,9 +17,9 @@ const directionsUrl =
 export default function DesignStudioPage() {
   return (
     <>
-      {/* HERO — the film */}
+      {/* HERO, the film */}
       <section className="relative w-full overflow-hidden bg-black pt-[112px] md:min-h-[88vh] md:pt-0">
-        <h1 className="sr-only">Inside the Design Studio — Fly Girl Events &amp; Design</h1>
+        <h1 className="sr-only">Inside the Design Studio, Fly Girl Events &amp; Design</h1>
         <video
           className="block aspect-video h-auto w-full object-contain md:absolute md:inset-0 md:h-full md:aspect-auto md:object-cover md:object-center"
           autoPlay
@@ -42,7 +42,7 @@ export default function DesignStudioPage() {
         />
       </section>
 
-      {/* THE CONSULTATION — one elegant section */}
+      {/* THE CONSULTATION, one elegant section */}
       <section className="bg-gradient-to-b from-ivory to-warmwhite">
         <div className="mx-auto max-w-shell px-[clamp(1.5rem,5vw,4rem)] py-[clamp(5rem,9vw,8rem)]">
           <div className="grid grid-cols-1 gap-[clamp(2.5rem,5vw,4.5rem)] md:grid-cols-2 md:items-center">
@@ -62,15 +62,15 @@ export default function DesignStudioPage() {
               <h2 className="mt-4 text-[clamp(2rem,3.6vw,3.1rem)] leading-[1.15] text-plum">
                 The Design Studio Consultation
               </h2>
-              <p className="mt-6 max-w-[52ch] text-[1.02rem] leading-[1.55] text-plum-body">
+              <p className="mt-6 max-w-[52ch] text-[1.02rem] leading-[1.75] text-plum-body">
                 Clients visit by appointment to review, touch, compare, and approve
-                the key elements of their project before installation day —
+                the key elements of their project before installation day,
                 from the design concept, palette, and linens to table styling,
                 welcome gift samples, packaging, menus, and signage.
               </p>
-              <p className="mt-5 max-w-[52ch] text-[1.02rem] leading-[1.55] text-plum-body">
+              <p className="mt-5 max-w-[52ch] text-[1.02rem] leading-[1.75] text-plum-body">
                 Our studio at {site.studioName}, within the Dallas Cowboys World
-                Headquarters, was chosen intentionally — a setting that reflects the
+                Headquarters, was chosen intentionally, a setting that reflects the
                 hospitality, design, and executive standard we bring to every
                 celebration.
               </p>

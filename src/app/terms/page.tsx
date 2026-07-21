@@ -23,13 +23,13 @@ export default function TermsPage() {
 
       <section className="bg-warmwhite">
         <div className="mx-auto max-w-[68ch] px-[clamp(1.5rem,6vw,5rem)] pb-[clamp(4rem,8vw,7rem)]">
-          <Reveal className="space-y-10 leading-[1.6] text-plum-body">
+          <Reveal className="space-y-10 leading-[1.8] text-plum-body">
             <div>
               <h2 className="mb-3 font-serif text-2xl text-plum">Use of This Website</h2>
               <p>
                 Welcome to the website of {site.name}. By using this site, you agree
-                to these terms. All content on this website — including text,
-                photography, video, and design — is the property of {site.name} and
+                to these terms. All content on this website, including text,
+                photography, video, and design, is the property of {site.name} and
                 may not be reproduced without written permission. The website is
                 provided for general information about our services; submitting an
                 inquiry does not by itself create a client engagement, which is

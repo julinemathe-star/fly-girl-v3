@@ -12,18 +12,18 @@ export type ConceptImage = {
 export const concepts: ConceptImage[] = [
   {
     src: "/media/concepts/01-elite-auto-reception-concept.jpg",
-    alt: "Concept rendering — a luxury automotive showroom reception design",
+    alt: "Concept rendering: a luxury automotive showroom reception design",
   },
   {
     src: "/media/concepts/02-living-kitchen-concept.jpg",
-    alt: "Concept rendering — a styled open-concept living and kitchen space",
+    alt: "Concept rendering: a styled open-concept living and kitchen space",
   },
   {
     src: "/media/concepts/03-two-story-living-concept.jpg",
-    alt: "Concept rendering — a two-story living room styling concept",
+    alt: "Concept rendering: a two-story living room styling concept",
   },
   {
     src: "/media/concepts/04-luxury-kitchen-concept.jpg",
-    alt: "Concept rendering — a luxury kitchen styling concept with waterfall island",
+    alt: "Concept rendering: a luxury kitchen styling concept with waterfall island",
   },
 ];

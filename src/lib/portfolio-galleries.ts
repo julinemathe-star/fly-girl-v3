@@ -38,10 +38,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "destination-wedding",
     title: "Destination Wedding",
-    subtitle: "Destination Experience — Montego Bay, Jamaica",
+    subtitle: "Destination Experience, Montego Bay, Jamaica",
     category: "destination-experiences",
     summary:
-      "A tropical destination celebration in champagne, teal, and coral — from the travel-inspired invitation suite to vows exchanged along the shoreline at golden hour.",
+      "A tropical destination celebration in champagne, teal, and coral, from the travel-inspired invitation suite to vows exchanged along the shoreline at golden hour.",
     images: [
       {
         src: "/media/portfolio/destination-wedding/01-invitation-suite.jpg",
@@ -84,10 +84,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "marios-50th-birthday",
     title: "Mario's 50th Birthday",
-    subtitle: "Milestone Birthday — Montego Bay, Jamaica",
+    subtitle: "Milestone Birthday, Montego Bay, Jamaica",
     category: "signature-tablescapes",
     summary:
-      "A milestone celebration in navy and gold, aged to perfection — from the illuminated backdrop and personalized signage to a favor box worthy of the occasion.",
+      "A milestone celebration in navy and gold, aged to perfection, from the illuminated backdrop and personalized signage to a favor box worthy of the occasion.",
     images: [
       {
         src: "/media/portfolio/marios-50th-birthday/01-backdrop-neon-signage.jpg",
@@ -110,14 +110,14 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "laurens-glamp-and-glow-spa-party",
     title: "Lauren's Glamp & Glow Spa Party",
-    subtitle: "Little Luxe™ — Presented by Team 2 Much™",
+    subtitle: "Little Luxe™, Presented by Team 2 Much™",
     category: "little-luxe",
     summary:
       "A glamping-meets-spa-day celebration in lavender and soft sparkle, proof that Little Luxe means never compromising on style.",
     images: [
       {
         src: "/media/portfolio/little-luxe/01-glamp-tents-room.jpg",
-        alt: "Lauren's Glamp & Glow Spa Party — glamping tents styled with fairy lights and a welcome screen",
+        alt: "Lauren's Glamp & Glow Spa Party, glamping tents styled with fairy lights and a welcome screen",
       },
       {
         src: "/media/portfolio/little-luxe/02-personalized-welcome-tumblers.jpg",
@@ -148,10 +148,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "laurens-7th-birthday",
     title: "Lauren's Birthday",
-    subtitle: "Private Celebration — Black & Gold",
+    subtitle: "Private Celebration, Black & Gold",
     category: "private-celebrations",
     summary:
-      "A black and gold celebration built around Lauren's favorite doll — polished, playful, and finished with a surprise character appearance.",
+      "A black and gold celebration built around Lauren's favorite doll, polished, playful, and finished with a surprise character appearance.",
     images: [
       {
         src: "/media/portfolio/laurens-7th-birthday/01-dessert-table-styling.jpg",
@@ -178,10 +178,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "azoyahs-graduation-celebration",
     title: "Azoyah's Graduation Celebration",
-    subtitle: "Milestone Celebration — Class of 2026, FAMU Bound",
+    subtitle: "Milestone Celebration, Class of 2026, FAMU Bound",
     category: "editorial-details",
     summary:
-      "A blush and sparkle celebration honoring a hard-earned achievement — from the personalized backdrop and buffet styling to the sweetest welcome favors for guests.",
+      "A blush and sparkle celebration honoring a hard-earned achievement, from the personalized backdrop and buffet styling to the sweetest welcome favors for guests.",
     images: [
       {
         src: "/media/portfolio/azoyahs-graduation-celebration/01-sweetheart-table-backdrop.jpg",
@@ -211,7 +211,7 @@ export const caseStudies: CaseStudy[] = [
     subtitle: "The Fly Girl Signature",
     category: "welcome-gifts",
     summary:
-      "A curated look at Fly Girl welcome gifts and guest favors — concepted, personalized, and finished with premium packaging, ribbon, and thoughtful presentation.",
+      "A curated look at Fly Girl welcome gifts and guest favors, concepted, personalized, and finished with premium packaging, ribbon, and thoughtful presentation.",
     images: [
       {
         src: "/media/portfolio/destination-wedding/03-welcome-bags.jpg",
@@ -249,7 +249,7 @@ export const caseStudies: CaseStudy[] = [
     subtitle: "Invitations, Menus & Personal Touches",
     category: "private-celebrations",
     summary:
-      "Invitation suites, menu cards, signage, and place settings — the considered details that carry a Fly Girl experience from first impression to final course.",
+      "Invitation suites, menu cards, signage, and place settings, the considered details that carry a Fly Girl experience from first impression to final course.",
     images: [
       {
         src: "/media/portfolio/destination-wedding/01-invitation-suite.jpg",
@@ -283,19 +283,19 @@ export const caseStudies: CaseStudy[] = [
     subtitle: "Networking, Executive Environments & VIP Hospitality",
     category: "corporate-executive",
     summary:
-      "Executive networking events, refined office environments, and VIP hospitality — designed to reflect your brand at its most considered.",
+      "Executive networking events, refined office environments, and VIP hospitality, designed to reflect your brand at its most considered.",
     images: [
       {
         src: "/media/concepts/corporate/networking-event-concept.jpg",
-        alt: "Design Concept — an executive networking event with styled cocktail tables, lounge seating, and illuminated signage",
+        alt: "Design Concept: an executive networking event with styled cocktail tables, lounge seating, and illuminated signage",
       },
       {
         src: "/media/concepts/styled-spaces/executive-office-concept.jpg",
-        alt: "Design Concept — a styled executive office with layered shelving, warm lighting, and refined details",
+        alt: "Design Concept: a styled executive office with layered shelving, warm lighting, and refined details",
       },
       {
         src: "/media/concepts/styled-spaces/executive-lounge-concept.jpg",
-        alt: "Design Concept — a moody executive lounge with leather seating, fireplace, and considered styling",
+        alt: "Design Concept: a moody executive lounge with leather seating, fireplace, and considered styling",
       },
     ],
   },
@@ -305,30 +305,30 @@ export const caseStudies: CaseStudy[] = [
     subtitle: "Draft Party & Team Dinner Transformations",
     category: "sports-hospitality",
     summary:
-      "An empty marble hall becomes a black-and-gold Draft Night, and a corporate boardroom becomes a championship team dinner — sports hospitality designed around a team's identity.",
+      "An empty marble hall becomes a black-and-gold Draft Night, and a corporate boardroom becomes a championship team dinner, sports hospitality designed around a team's identity.",
     images: [],
     pairs: [
       {
         before: {
           src: "/media/concepts/sports/draft-party-before.jpg",
-          alt: "Before — the empty marble event space prior to the Draft Night design concept",
+          alt: "Before: the empty marble event space prior to the Draft Night design concept",
         },
         concept: {
           src: "/media/concepts/sports/draft-party-concept.jpg",
-          alt: "Concept rendering — a black and gold Draft Night lounge with illuminated backdrop and styled cocktail tables",
+          alt: "Concept rendering: a black and gold Draft Night lounge with illuminated backdrop and styled cocktail tables",
         },
-        caption: "Draft Night — an empty marble hall becomes a black-and-gold arrival moment.",
+        caption: "Draft Night, an empty marble hall becomes a black-and-gold arrival moment.",
       },
       {
         before: {
           src: "/media/concepts/sports/team-dinner-before.jpg",
-          alt: "Before — the executive boardroom prior to the team dinner design concept",
+          alt: "Before: the executive boardroom prior to the team dinner design concept",
         },
         concept: {
           src: "/media/concepts/sports/team-dinner-concept.jpg",
-          alt: "Concept rendering — a candlelit team dinner with black and gold place settings and greenery centerpieces",
+          alt: "Concept rendering: a candlelit team dinner with black and gold place settings and greenery centerpieces",
         },
-        caption: "Team Dinner — a corporate boardroom becomes a championship evening.",
+        caption: "Team Dinner, a corporate boardroom becomes a championship evening.",
       },
     ],
   },
@@ -342,20 +342,20 @@ export const caseStudies: CaseStudy[] = [
     images: [
       {
         src: "/media/concepts/styled-spaces/executive-lounge-concept.jpg",
-        alt: "Concept rendering — a moody executive lounge with leather seating, fireplace, and considered styling",
+        alt: "Concept rendering: a moody executive lounge with leather seating, fireplace, and considered styling",
       },
     ],
     pairs: [
       {
         before: {
           src: "/media/concepts/styled-spaces/executive-office-before.jpg",
-          alt: "Before — the actual empty executive office at Elite European Auto prior to the design concept",
+          alt: "Before: the actual empty executive office at Elite European Auto prior to the design concept",
         },
         concept: {
           src: "/media/concepts/styled-spaces/executive-office-concept.jpg",
-          alt: "Concept rendering — the matching executive office design with automotive art, layered shelving, and warm lighting",
+          alt: "Concept rendering: the matching executive office design with automotive art, layered shelving, and warm lighting",
         },
-        caption: "Elite European Auto — the actual empty office, and its executive office concept rendering.",
+        caption: "Elite European Auto, the actual empty office, and its executive office concept rendering.",
       },
     ],
   },
@@ -365,7 +365,7 @@ export const caseStudies: CaseStudy[] = [
     subtitle: "Corporate & Private Dining Details",
     category: "corporate-executive",
     summary:
-      "Black-and-gold executive dinners, acrylic gold-foil menus, and candlelit ivory tables — the considered dining details that carry a Fly Girl experience from first course to final toast.",
+      "Black-and-gold executive dinners, acrylic gold-foil menus, and candlelit ivory tables, the considered dining details that carry a Fly Girl experience from first course to final toast.",
     images: [
       {
         src: "/media/portfolio/executive-dining/01-black-gold-tablescape.jpg",
@@ -391,7 +391,7 @@ export const caseStudies: CaseStudy[] = [
     subtitle: "Winter White & Gold",
     category: "corporate-executive",
     summary:
-      "Winter white and gold seasonal styling for corporate holiday events and private gatherings — crushed velvet, beaded chargers, mercury glass, and quiet sparkle.",
+      "Winter white and gold seasonal styling for corporate holiday events and private gatherings, crushed velvet, beaded chargers, mercury glass, and quiet sparkle.",
     images: [
       {
         src: "/media/portfolio/holiday-styling/02-winter-white-place-setting.jpg",
@@ -410,10 +410,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "blush-gold-celebration",
     title: "Blush & Gold Celebrations",
-    subtitle: "Soft Glamour — Celebration Styling",
+    subtitle: "Soft Glamour, Celebration Styling",
     category: "private-celebrations",
     summary:
-      "Blush, lavender, and gold celebration styling — sequin linens, gold chiavari seating, layered florals, and jeweled place settings designed for milestone moments.",
+      "Blush, lavender, and gold celebration styling, sequin linens, gold chiavari seating, layered florals, and jeweled place settings designed for milestone moments.",
     images: [
       {
         src: "/media/portfolio/blush-gold-celebration/02-quinceanera-head-table.jpg",
@@ -444,13 +444,13 @@ export const categoryGalleries: CategoryGallery[] = [
     slug: "corporate-executive",
     title: "Corporate & Executive Experiences",
     description:
-      "Executive dinners, VIP receptions, and corporate hospitality — designed to reflect your brand at its most considered.",
+      "Executive dinners, VIP receptions, and corporate hospitality, designed to reflect your brand at its most considered.",
   },
   {
     slug: "sports-hospitality",
     title: "Sports Hospitality",
     description:
-      "Draft parties, team dinners, VIP hospitality, and luxury sports experiences — designed around a team's identity and culture.",
+      "Draft parties, team dinners, VIP hospitality, and luxury sports experiences, designed around a team's identity and culture.",
   },
   {
     slug: "styled-spaces",
@@ -471,7 +471,7 @@ export const categoryGalleries: CategoryGallery[] = [
     slug: "welcome-gifts",
     title: "Welcome Gifts",
     description:
-      "The Fly Girl signature — premium packaging, personalization, and unforgettable first impressions.",
+      "The Fly Girl signature, premium packaging, personalization, and unforgettable first impressions.",
   },
   {
     slug: "little-luxe",

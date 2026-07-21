@@ -19,26 +19,26 @@ const steps: Step[] = [
   {
     n: "02",
     title: "Design Development",
-    body: "This is where Fly Girl begins to design. We thoughtfully curate every detail — luxury tablescapes, signature displays, personalized stationery, invitations, menu cards, table numbers, favors, florals, linens, chargers, and styling — composed entirely around your vision.",
+    body: "This is where Fly Girl begins to design. We thoughtfully curate every detail, luxury tablescapes, signature displays, personalized stationery, invitations, menu cards, table numbers, favors, florals, linens, chargers, and styling, composed entirely around your vision.",
     note: "Every design is completely customized. Nothing is copied. Nothing is cookie-cutter.",
   },
   {
     n: "03",
     title: "Design Studio Consultation",
     body: "Before production begins, you're invited into the Fly Girl Design Studio at Formation to review, touch, compare, and approve the key elements of your project. The Design Studio Consultation is $250.",
-    note: "During the preview, you'll experience many of the actual design elements planned for your celebration — tablescapes, chargers, linens, florals, personalized menu cards, table numbers, invitations, signature displays, favors, and your overall design direction.",
+    note: "During the preview, you'll experience many of the actual design elements planned for your celebration, tablescapes, chargers, linens, florals, personalized menu cards, table numbers, invitations, signature displays, favors, and your overall design direction.",
     quote:
       "We don't ask you to imagine your celebration.\nWe invite you to experience it before it happens.",
   },
   {
     n: "04",
     title: "The Celebration Begins",
-    body: "Once every detail has been thoughtfully prepared, Fly Girl transforms the space while you focus on making memories — styling every curated element so you can relax, celebrate, and enjoy the people you love.",
+    body: "Once every detail has been thoughtfully prepared, Fly Girl transforms the space while you focus on making memories, styling every curated element so you can relax, celebrate, and enjoy the people you love.",
   },
 ];
 
 /**
- * The Fly Girl Journey — the client experience in four elegant steps.
+ * The Fly Girl Journey, the client experience in four elegant steps.
  * Editorial, image-free, generous whitespace; step 03 carries extra detail.
  */
 export default function JourneySection() {

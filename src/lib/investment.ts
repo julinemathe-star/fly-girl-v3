@@ -10,7 +10,7 @@ export type InvestmentTier = {
 };
 
 /**
- * V3 Signature Services & starting investments — never "packages."
+ * V3 Signature Services & starting investments, never "packages."
  * Corporate & Executive Event Styling appears first by design.
  */
 export const investmentTiers: InvestmentTier[] = [
@@ -18,9 +18,9 @@ export const investmentTiers: InvestmentTier[] = [
     name: "Corporate & Executive Event Styling",
     detail:
       "Executive dinners, VIP receptions, networking events, sports hospitality, client-appreciation experiences, brand events, and corporate celebrations",
-    from: "$3,500",
+    custom: true,
     description:
-      "First-class experiences for the moments your brand is measured by — imagined, designed, and executed flawlessly.",
+      "First-class experiences for the moments your brand is measured by, imagined, designed, and executed flawlessly. Designed by private proposal; engagements typically begin at $7,500.",
     includes: [
       "Custom creative concept",
       "Event design direction",
@@ -34,10 +34,28 @@ export const investmentTiers: InvestmentTier[] = [
     ],
   },
   {
+    name: "Sports Hospitality",
+    detail:
+      "Draft parties, team dinners, family lounges, championship celebrations, and owner and sponsor experiences, designed around a team's identity",
+    custom: true,
+    description:
+      "Hospitality designed from inside the world of sports, from our studio at the Dallas Cowboys World Headquarters. Every engagement is designed by private proposal.",
+    includes: [
+      "Custom creative concept built around the team",
+      "Event design direction",
+      "Design Studio planning",
+      "Layout, styling, and tablescape design",
+      "Discreet coordination with team and venue staff",
+      "Setup and on-site styling",
+      "Execution by Juline and the Fly Girl team",
+      "Final walkthrough",
+    ],
+  },
+  {
     name: "Private Celebrations",
     from: "$2,500",
     description:
-      "Milestone moments composed with elegance and personality — designed entirely around the guest of honor.",
+      "Milestone moments composed with elegance and personality, designed entirely around the guest of honor.",
     includes: [
       "Custom creative concept",
       "Event design and styling direction",
@@ -51,9 +69,9 @@ export const investmentTiers: InvestmentTier[] = [
   },
   {
     name: "Destination Experiences",
-    from: "$4,500",
+    custom: true,
     description:
-      "Celebrations and experiences designed wherever the journey takes you — drawn from a lifetime of travel.",
+      "Celebrations and experiences designed wherever the journey takes you, drawn from a lifetime of travel.",
     includes: [
       "Destination design and creative direction",
       "Travel-ready styling plan",
@@ -79,9 +97,9 @@ export const investmentTiers: InvestmentTier[] = [
   },
   {
     name: "Model Home Styling",
-    from: "$2,000",
+    from: "$5,000",
     description:
-      "Model homes buyers fall in love with the moment they walk in — for builders and developers.",
+      "Model homes buyers fall in love with the moment they walk in, for builders and developers.",
     includes: [
       "Model-home concept",
       "Room-by-room styling direction",
@@ -93,9 +111,9 @@ export const investmentTiers: InvestmentTier[] = [
   },
   {
     name: "Home Staging",
-    from: "$1,500",
+    from: "$4,500",
     description:
-      "Thoughtful styling that prepares homes for market and creates emotional buyer connections — for homeowners, Realtors, and builders.",
+      "Thoughtful styling that prepares homes for market and creates emotional buyer connections, for homeowners, Realtors, and builders.",
     includes: [
       "Property walkthrough",
       "Staging concept",
@@ -111,7 +129,7 @@ export const investmentTiers: InvestmentTier[] = [
     from: "$395",
     unit: "per room",
     description:
-      "Send photos of an empty or outdated room and Fly Girl digitally reimagines the space before furniture is purchased — presented as design concepts.",
+      "Send photos of an empty or outdated room and Fly Girl digitally reimagines the space before furniture is purchased, presented as design concepts.",
     includes: [
       "Photo review and consultation",
       "Digitally reimagined room concept",
@@ -120,25 +138,12 @@ export const investmentTiers: InvestmentTier[] = [
     ],
   },
   {
-    name: "Residential Styling",
-    from: "$500",
-    unit: "per room",
-    description:
-      "Homes and vacation rentals styled room by room with an editorial eye.",
-    includes: [
-      "Styling direction for the space",
-      "Curated décor and finishing details",
-      "Use of Fly Girl inventory where applicable",
-      "Installation and final styling",
-    ],
-  },
-  {
     name: "Welcome Gifts",
     detail:
       "Corporate, VIP, destination, executive, hotel, and client-appreciation gifts",
-    from: "$750",
+    from: "$1,000",
     description:
-      "The Fly Girl signature — premium packaging, ribbon, personalization, and thoughtful presentation.",
+      "The Fly Girl signature, premium packaging, ribbon, personalization, and thoughtful presentation.",
     includes: [
       "Gift concept development",
       "Packaging direction",
@@ -193,11 +198,11 @@ export const everyExperienceIncludes = [
 ];
 
 export const hiringStatement =
-  "You aren't hiring Fly Girl simply to decorate—you are hiring a luxury creative studio to imagine it, design it, style it, and execute it flawlessly from concept to completion.";
+  "You aren't hiring Fly Girl simply to decorate. You are hiring a luxury creative studio to imagine it, design it, style it, and execute it flawlessly from concept to completion.";
 
-/** The Design Studio Consultation — an appointment, never described as free. */
+/** The Design Studio Consultation, an appointment, never described as free. */
 export const designStudioConsultation = {
-  price: "$250",
+  price: "$350",
   title: "Design Studio Consultation",
   location:
     "Held inside the Fly Girl Design Studio at Formation, located at the Dallas Cowboys World Headquarters in Frisco.",
@@ -216,7 +221,7 @@ export const nextSteps = [
   {
     n: "01",
     title: "Reserve Your Design Studio Consultation",
-    body: "Your $250 Design Studio Consultation is a private appointment at Formation — vision meeting, mood board, concept development, color palette, material recommendations, and investment planning.",
+    body: "Your $250 Design Studio Consultation is a private appointment at Formation, vision meeting, mood board, concept development, color palette, material recommendations, and investment planning.",
   },
   {
     n: "02",

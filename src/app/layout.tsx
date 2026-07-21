@@ -22,8 +22,8 @@ const sans = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — ${site.tagline}`,
-    template: `%s — ${site.name}`,
+    default: `${site.name}, ${site.tagline}`,
+    template: `%s, ${site.name}`,
   },
   description: site.description,
   keywords: [
@@ -42,14 +42,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: site.url,
-    title: `${site.name} — ${site.tagline}`,
+    title: `${site.name}, ${site.tagline}`,
     description: site.description,
     siteName: site.name,
     images: [{ url: "/media/hero-poster.jpg", width: 1280, height: 720, alt: site.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — ${site.tagline}`,
+    title: `${site.name}, ${site.tagline}`,
     description: site.description,
     images: ["/media/hero-poster.jpg"],
   },

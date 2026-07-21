@@ -9,7 +9,7 @@ export const journeyExperience = [
   },
   {
     title: "Design Studio Consultation",
-    body: "Review, touch, compare, and approve key elements — design concept, color palette, linens, table styling, Welcome Gift samples, packaging, menus, and signage — before production or event day.",
+    body: "Review, touch, compare, and approve key elements, design concept, color palette, linens, table styling, Welcome Gift samples, packaging, menus, and signage, before production or event day.",
   },
   {
     title: "Worldwide Service",
@@ -20,7 +20,7 @@ export const journeyExperience = [
 export const previewFee = {
   price: "$250",
   title: "The Design Studio Consultation",
-  body: "A $250 Design Studio Consultation reserves your private appointment at Formation — where we discuss your vision, goals, inspiration, and initial design direction.",
+  body: "A $250 Design Studio Consultation reserves your private appointment at Formation, where we discuss your vision, goals, inspiration, and initial design direction.",
   note: "This appointment allows us to begin designing an experience that's uniquely yours.",
 };
 

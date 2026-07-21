@@ -5,13 +5,13 @@ import { site, consultationHref } from "@/lib/site";
 /**
  * Launch hero.
  *
- * MOBILE — the film leads. The video fills the top ~60% of the first screen
+ * MOBILE, the film leads. The video fills the top ~60% of the first screen
  * (object-cover, biased toward Juline at frame center) with only a thin
  * scrim at the very top for nav legibility and a soft fade at the bottom
  * into the copy panel. No typography ever sits over Juline. The copy panel
  * below carries a single statement, one supporting line, and two actions.
  *
- * DESKTOP — the original full-bleed cinematic treatment, with the copy
+ * DESKTOP, the original full-bleed cinematic treatment, with the copy
  * stack trimmed so the film breathes: statement, one line, signature
  * italic, actions.
  */
@@ -35,7 +35,7 @@ export default function Hero() {
 
         {/* Thin scrims only where needed: nav legibility up top, a gentle
             hand-off into the copy panel below. The center of the frame —
-            where Juline works — stays completely clear. */}
+            where Juline works, stays completely clear. */}
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0"
@@ -55,7 +55,7 @@ export default function Hero() {
         />
       </div>
 
-      {/* Mobile copy panel — concise by design. */}
+      {/* Mobile copy panel, concise by design. */}
       <div className="relative z-[2] w-full px-6 pb-11 pt-2 text-center md:hidden">
         <p className="animate-hero-logo text-[0.64rem] font-semibold uppercase tracking-[0.3em] text-champagne">
           Fly Girl &nbsp;&bull;&nbsp; Events &amp; Design
@@ -65,7 +65,7 @@ export default function Hero() {
           {site.heroStatement}
         </h1>
 
-        <p className="mx-auto mt-4 max-w-[36ch] animate-hero-sub text-[0.95rem] font-normal leading-[1.5] text-warmwhite/85">
+        <p className="mx-auto mt-4 max-w-[36ch] animate-hero-sub text-[0.95rem] font-normal leading-[1.7] text-warmwhite/85">
           {site.heroSub}
         </p>
 
@@ -114,7 +114,7 @@ export default function Hero() {
         }}
       />
 
-      {/* Desktop copy — trimmed so the film carries the moment. */}
+      {/* Desktop copy, trimmed so the film carries the moment. */}
       <div className="relative z-[3] hidden w-full md:block md:max-w-[720px] md:pb-[clamp(4rem,8vh,6.5rem)] md:pl-[clamp(2rem,6vw,5rem)] md:pr-6 md:text-left">
         <p className="animate-hero-logo text-shadow-soft text-[clamp(0.72rem,1.4vw,0.9rem)] font-semibold uppercase tracking-[0.4em] text-champagne">
           Fly Girl &nbsp;&bull;&nbsp; Events &amp; Design
@@ -133,11 +133,11 @@ export default function Hero() {
           <span className="h-px flex-1 bg-gradient-to-l from-transparent to-gold/80" />
         </div>
 
-        <p className="mt-5 max-w-[54ch] animate-hero-sub text-[clamp(1.02rem,1.5vw,1.12rem)] font-medium leading-[1.5] tracking-[0.01em] text-white text-shadow-luxe">
+        <p className="mt-5 max-w-[54ch] animate-hero-sub text-[clamp(1.02rem,1.5vw,1.12rem)] font-medium leading-[1.7] tracking-[0.01em] text-white text-shadow-luxe">
           {site.heroSub}
         </p>
 
-        <p className="mb-[2rem] mt-[1.1rem] max-w-prose2 animate-hero-sub font-serif text-[clamp(1.08rem,1.7vw,1.28rem)] font-medium italic leading-[1.55] tracking-[0.01em] text-champagne text-shadow-luxe">
+        <p className="mb-[2rem] mt-[1.1rem] max-w-prose2 animate-hero-sub font-serif text-[clamp(1.08rem,1.7vw,1.28rem)] font-medium italic leading-[1.75] tracking-[0.01em] text-champagne text-shadow-luxe">
           {site.boardroomsLine}
         </p>
 

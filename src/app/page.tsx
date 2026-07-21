@@ -6,7 +6,7 @@ import Button from "@/components/Button";
 import { site, consultationHref } from "@/lib/site";
 
 /**
- * Homepage — confidence through simplicity.
+ * Homepage, confidence through simplicity.
  * Hero film → brief introduction → one editorial studio image →
  * contact → a single call to action. Nothing else.
  */
@@ -20,9 +20,10 @@ export default function HomePage() {
         <div className="mx-auto max-w-[680px] px-[clamp(1.5rem,6vw,5rem)] py-[clamp(5rem,10vw,8.5rem)] text-center">
           <Reveal>
             <span className="eyebrow eyebrow-ink">Luxury Event Design Studio</span>
-            <p className="mx-auto mt-7 font-serif text-[clamp(1.45rem,2.6vw,2rem)] font-light leading-[1.5] text-plum">
-              Celebrations, executive experiences, and styled spaces designed with
-              intention in Frisco, Texas and worldwide.
+            <p className="mx-auto mt-7 font-serif text-[clamp(1.45rem,2.6vw,2rem)] font-light leading-[1.7] text-plum">
+              Executive experiences, sports hospitality, styled spaces, and signature
+              celebrations, designed with intention from our studio at the Dallas
+              Cowboys World Headquarters in Frisco, Texas.
             </p>
           </Reveal>
         </div>
@@ -59,7 +60,7 @@ export default function HomePage() {
               Luxury Design Studio
             </p>
 
-            <div className="mt-8 space-y-1 font-semibold text-plum-body">
+            <div className="mt-8 space-y-1 font-medium text-plum-body">
               <p>Located inside {site.studioName}</p>
               <p>at Dallas Cowboys World Headquarters</p>
               <p>5 Cowboys Way</p>
@@ -71,7 +72,7 @@ export default function HomePage() {
               {site.appointmentLine}
             </p>
 
-            <div className="mt-8 space-y-2 font-semibold text-plum-body">
+            <div className="mt-8 space-y-2 font-medium text-plum-body">
               <p>
                 Phone:{" "}
                 <a href={`tel:${site.phoneHref}`} className="text-plum transition-colors hover:text-gold-ink">

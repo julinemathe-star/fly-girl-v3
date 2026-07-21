@@ -23,12 +23,12 @@ export default function PrivacyPolicyPage() {
 
       <section className="bg-warmwhite">
         <div className="mx-auto max-w-[68ch] px-[clamp(1.5rem,6vw,5rem)] pb-[clamp(4rem,8vw,7rem)]">
-          <Reveal className="space-y-10 leading-[1.6] text-plum-body">
+          <Reveal className="space-y-10 leading-[1.8] text-plum-body">
             <div>
               <h2 className="mb-3 font-serif text-2xl text-plum">Information We Collect</h2>
               <p>
-                When you contact {site.name} — through our inquiry forms, by email,
-                by phone, or by text message — we collect the information you choose
+                When you contact {site.name}, through our inquiry forms, by email,
+                by phone, or by text message, we collect the information you choose
                 to share with us, such as your name, email address, phone number,
                 and details about your event or project. We collect this information
                 solely to respond to your inquiry and to provide our services.

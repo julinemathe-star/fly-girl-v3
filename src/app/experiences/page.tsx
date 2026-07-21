@@ -10,7 +10,7 @@ import { site, consultationHref } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Experiences",
   description:
-    "Every Fly Girl experience begins with your vision — corporate and executive experiences, styled spaces, welcome gifts, destination experiences, and private celebrations, designed exclusively for you.",
+    "Every Fly Girl experience begins with your vision, corporate and executive experiences, styled spaces, welcome gifts, destination experiences, and private celebrations, designed exclusively for you.",
 };
 
 export default function ExperiencesPage() {
@@ -22,7 +22,7 @@ export default function ExperiencesPage() {
         eyebrowClassName="eyebrow-ink"
       />
 
-      {/* Intro copy — minimal, centered, generous space */}
+      {/* Intro copy, minimal, centered, generous space */}
       <section className="bg-warmwhite">
         <div className="mx-auto max-w-[60ch] px-[clamp(1.5rem,6vw,5rem)] pb-[clamp(4rem,8vw,7rem)] text-center">
           <Reveal>
@@ -41,10 +41,10 @@ export default function ExperiencesPage() {
         </div>
       </section>
 
-      {/* The Fly Girl Experience — four-step client journey */}
+      {/* The Fly Girl Experience, four-step client journey */}
       <JourneySection />
 
-      {/* Experience Collections — editorial image-forward rows */}
+      {/* Experience Collections, editorial image-forward rows */}
       <section id="collections" className="bg-warmwhite">
         <div className="section-shell">
           <Reveal className="mx-auto mb-[clamp(3.5rem,7vw,6rem)] max-w-[640px] text-center">
@@ -53,7 +53,7 @@ export default function ExperiencesPage() {
               Celebrations We Love Designing
             </h2>
             <p className="mt-4 text-plum-soft">
-              A few of the celebrations we love designing — offered to inspire, never as
+              A few of the celebrations we love designing, offered to inspire, never as
               preset packages. Consider them a starting point for something entirely your own.
             </p>
           </Reveal>
@@ -66,13 +66,13 @@ export default function ExperiencesPage() {
 
           <Reveal className="mx-auto mt-[clamp(4rem,8vw,7rem)] max-w-[640px] text-center">
             <p className="font-serif text-xl italic text-gold-ink sm:text-2xl">
-              Our gallery exists to inspire—not to limit—what is possible.
+              Our gallery exists to inspire, not to limit, what is possible.
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* Final CTA — matches the homepage inquiry treatment */}
+      {/* Final CTA, matches the homepage inquiry treatment */}
       <section className="relative overflow-hidden bg-plum text-warmwhite">
         <div
           className="pointer-events-none absolute inset-0"

@@ -9,13 +9,13 @@ import { site, consultationHref } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Meet Juline Mathe, Creative Director & Luxury Event Designer at Fly Girl Events & Design — a luxury creative studio in Frisco, Texas shaped by more than 25 years of world travel and luxury hospitality.",
+    "Meet Juline Mathe, Creative Director & Luxury Event Designer at Fly Girl Events & Design, a luxury creative studio in Frisco, Texas shaped by more than 25 years of world travel and luxury hospitality.",
 };
 
 export default function AboutPage() {
   return (
     <>
-      {/* HERO — full-bleed aviation image with the quote overlaid.
+      {/* HERO, full-bleed aviation image with the quote overlaid.
           Portrait crop on mobile (Juline larger), wide crop on desktop. */}
       <section className="relative min-h-[88vh] w-full overflow-hidden">
         {/* Mobile portrait */}
@@ -37,7 +37,7 @@ export default function AboutPage() {
           className="hidden object-cover object-center sm:block"
         />
 
-        {/* Soft scrim for text legibility — kept light to let the image breathe */}
+        {/* Soft scrim for text legibility, kept light to let the image breathe */}
         <div
           className="absolute inset-0"
           style={{
@@ -58,7 +58,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* OUR STORY — shortened, warm, editorial */}
+      {/* OUR STORY, shortened, warm, editorial */}
       <section className="bg-warmwhite">
         <div className="section-shell">
           <div className="mx-auto max-w-[720px] text-center">
@@ -75,11 +75,11 @@ export default function AboutPage() {
                 Creative Director &amp; Luxury Event Designer
               </p>
               <p className="mt-3 text-[0.85rem] leading-relaxed text-plum-body/85">
-                Formerly Event Manager, Deloitte University — Westlake, Texas
+                Formerly Event Manager, Deloitte University, Westlake, Texas
               </p>
             </Reveal>
 
-            <Reveal delay={0.14} className="mt-10 space-y-7 text-[1.05rem] leading-[1.6] text-plum-body">
+            <Reveal delay={0.14} className="mt-10 space-y-7 text-[1.05rem] leading-[1.8] text-plum-body">
               <p>
                 After traveling the world as a Flight Attendant for more than 25
                 years, I developed an eye for luxury hospitality, exceptional guest
@@ -90,14 +90,14 @@ export default function AboutPage() {
               <p>
                 My work brings together global travel, luxury hospitality, corporate
                 event management, guest experience, creative direction, event design,
-                styled environments, and thoughtful details — a perspective shaped in
+                styled environments, and thoughtful details, a perspective shaped in
                 the world&apos;s most beautiful places and refined at the highest level
                 of corporate hospitality.
               </p>
             </Reveal>
 
             <Reveal delay={0.2} className="mt-11">
-              <blockquote className="font-serif text-[clamp(1.25rem,2.2vw,1.6rem)] italic leading-[1.5] text-gold-ink">
+              <blockquote className="font-serif text-[clamp(1.25rem,2.2vw,1.6rem)] italic leading-[1.7] text-gold-ink">
                 &ldquo;I&apos;ve always believed people may forget what happened during
                 an event, but they&apos;ll never forget how it made them feel.
                 That&apos;s the experience we design.&rdquo;
@@ -107,7 +107,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* EDITORIAL FLAT-LAY — travel & design, shown in full so every element
+      {/* EDITORIAL FLAT-LAY, travel & design, shown in full so every element
           (passport, boarding pass, swatches, sketch, florals) stays visible. */}
       <section className="bg-warmwhite">
         <Reveal>
@@ -115,7 +115,7 @@ export default function AboutPage() {
             <div className="overflow-hidden rounded-[4px] shadow-media">
               <Image
                 src="/media/team/story-flatlay.jpg"
-                alt="A luxury travel and design flat-lay — passport, Fly Girl first-class boarding pass, fabric swatches, a hand-sketched celebration, gold pen, florals, and a wedding inspiration photo"
+                alt="A luxury travel and design flat-lay, passport, Fly Girl first-class boarding pass, fabric swatches, a hand-sketched celebration, gold pen, florals, and a wedding inspiration photo"
                 width={676}
                 height={479}
                 loading="lazy"
@@ -148,7 +148,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* FINALE — bright CTA */}
+      {/* FINALE, bright CTA */}
       <section className="relative overflow-hidden bg-gradient-to-b from-ivory to-warmwhite">
         <div
           className="pointer-events-none absolute inset-0"
@@ -163,7 +163,7 @@ export default function AboutPage() {
             <h2 className="mb-8 mt-6 text-[clamp(2rem,4vw,3.2rem)] leading-[1.2] text-plum">
               Every Great Journey Begins With a First Step.
             </h2>
-            <p className="mx-auto mb-10 max-w-[52ch] leading-[1.6] text-plum-body">
+            <p className="mx-auto mb-10 max-w-[52ch] leading-[1.8] text-plum-body">
               Whether you&apos;re celebrating around the corner or across the world, we&apos;d
               be honored to design something unforgettable together.
             </p>

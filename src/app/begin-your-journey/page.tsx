@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function BeginYourJourneyPage() {
   return (
     <>
-      {/* 1. HERO — the studio image */}
+      {/* 1. HERO, the studio image */}
       <section className="relative flex min-h-[88vh] w-full items-end overflow-hidden">
         <Image
           src="/media/journey-hero-office.jpg"
@@ -42,7 +42,7 @@ export default function BeginYourJourneyPage() {
             <h1 className="mt-5 text-[clamp(2.4rem,5.5vw,4.4rem)] leading-[1.06] text-white text-shadow-luxe">
               Begin Your Journey
             </h1>
-            <p className="mx-auto mt-7 max-w-[60ch] text-[1.05rem] leading-[1.55] text-white/90 text-shadow-soft">
+            <p className="mx-auto mt-7 max-w-[60ch] text-[1.05rem] leading-[1.75] text-white/90 text-shadow-soft">
               Every unforgettable celebration begins with a conversation. Whether
               you&apos;re planning an intimate gathering, destination wedding, luxury
               birthday, corporate event, or beautifully styled interior, we&apos;d be
@@ -60,7 +60,7 @@ export default function BeginYourJourneyPage() {
             <h2 className="mt-6 text-[clamp(2rem,3.6vw,3.1rem)] leading-[1.15] text-plum">
               Your First-Class Consultation
             </h2>
-            <div className="mx-auto mt-7 max-w-[58ch] space-y-5 text-[1.02rem] leading-[1.6] text-plum-body">
+            <div className="mx-auto mt-7 max-w-[58ch] space-y-5 text-[1.02rem] leading-[1.8] text-plum-body">
               <p>Every Fly Girl experience begins with understanding your vision.</p>
               <p>
                 We&apos;ll learn about your celebration, your style, your priorities, and
@@ -95,7 +95,7 @@ export default function BeginYourJourneyPage() {
                   className="mx-auto mb-4 h-9 w-9 rounded-full border border-gold/50"
                 />
                 <h3 className="text-[1.1rem] leading-snug text-plum">{item.title}</h3>
-                <p className="mt-3 text-[0.88rem] leading-[1.5] text-plum-body">
+                <p className="mt-3 text-[0.88rem] leading-[1.7] text-plum-body">
                   {item.body}
                 </p>
               </Reveal>
@@ -104,7 +104,7 @@ export default function BeginYourJourneyPage() {
         </div>
       </section>
 
-      {/* 4. CONSULTATION FEE — elegant callout, not a large price box */}
+      {/* 4. CONSULTATION FEE, elegant callout, not a large price box */}
       <section className="bg-warmwhite">
         <div className="mx-auto max-w-[640px] px-[clamp(1.5rem,6vw,5rem)] py-[clamp(4rem,9vw,7rem)] text-center">
           <Reveal>
@@ -113,10 +113,10 @@ export default function BeginYourJourneyPage() {
                 {previewFee.title}
               </span>
               <span className="font-serif text-3xl text-plum">{previewFee.price}</span>
-              <p className="mt-2 text-[0.95rem] leading-[1.55] text-plum-body">
+              <p className="mt-2 text-[0.95rem] leading-[1.75] text-plum-body">
                 {previewFee.body}
               </p>
-              <p className="text-[0.95rem] leading-[1.55] text-plum-body">
+              <p className="text-[0.95rem] leading-[1.75] text-plum-body">
                 {previewFee.note}
               </p>
             </div>
@@ -140,7 +140,7 @@ export default function BeginYourJourneyPage() {
         </div>
       </section>
 
-      {/* 6 & 7. BOTTOM SECTION — closing statement + CTA */}
+      {/* 6 & 7. BOTTOM SECTION, closing statement + CTA */}
       <section className="relative overflow-hidden bg-gradient-to-b from-ivory to-warmwhite">
         <div
           className="pointer-events-none absolute inset-0"

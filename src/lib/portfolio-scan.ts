@@ -3,19 +3,19 @@ import path from "path";
 import { caseStudies, type CaseStudy, type PortfolioImage } from "./portfolio-galleries";
 
 /**
- * Folder-driven portfolio (server-only — runs at build time).
+ * Folder-driven portfolio (server-only, runs at build time).
  *
  * public/media/portfolio/ is the source of truth. Every folder is one
  * project or one service category. This module merges the folders with the
  * curated case studies in portfolio-galleries.ts:
  *
  *  1. Curated stories keep their titles, order, summaries, and hand-written
- *     alt text — nothing is lost.
+ *     alt text, nothing is lost.
  *  2. Any NEW image dropped into a folder that already has a story is
  *     appended to that story's gallery automatically (sorted by filename,
  *     so the 01- prefix convention controls order and the thumbnail).
  *  3. Any NEW folder containing images becomes its own project
- *     automatically — folder name in elegant title case, first image as
+ *     automatically, folder name in elegant title case, first image as
  *     the cover, the rest as the gallery.
  *
  * If anything goes wrong reading the filesystem, the curated set is
@@ -86,7 +86,7 @@ export function buildPortfolio(): CaseStudy[] {
       for (const img of study.images) referenced.add(img.src);
     }
 
-    // First curated story that draws from each folder — new images in that
+    // First curated story that draws from each folder, new images in that
     // folder join this story.
     const folderOwner = new Map<string, CaseStudy>();
     for (const study of caseStudies) {
@@ -128,7 +128,7 @@ export function buildPortfolio(): CaseStudy[] {
             referenced.add(src);
             target.images.push({
               src,
-              alt: `${target.title} — ${describeFile(src)}`,
+              alt: `${target.title}, ${describeFile(src)}`,
             });
           }
         }
@@ -137,7 +137,7 @@ export function buildPortfolio(): CaseStudy[] {
         const title = titleCase(folder.name);
         const newImages: PortfolioImage[] = images
           .filter((src) => !referenced.has(src))
-          .map((src) => ({ src, alt: `${title} — ${describeFile(src)}` }));
+          .map((src) => ({ src, alt: `${title}, ${describeFile(src)}` }));
         if (newImages.length === 0) continue;
         for (const img of newImages) referenced.add(img.src);
         merged.push({

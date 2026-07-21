@@ -15,10 +15,10 @@ type LightboxProps = {
 
 /**
  * Elegant, accessible lightbox for portfolio projects.
- * — Prev/next controls, keyboard arrows, Escape to close
- * — Swipe navigation on touch devices
- * — Caption from the image's alt text, plus project title
- * — No page reload; focus moves to the close button on open
+ *, Prev/next controls, keyboard arrows, Escape to close
+ *, Swipe navigation on touch devices
+ *, Caption from the image's alt text, plus project title
+ *, No page reload; focus moves to the close button on open
  */
 export default function Lightbox({ images, index, title, onClose, onNavigate }: LightboxProps) {
   const closeRef = useRef<HTMLButtonElement>(null);
@@ -74,7 +74,7 @@ export default function Lightbox({ images, index, title, onClose, onNavigate }: 
     <div
       role="dialog"
       aria-modal="true"
-      aria-label={title ? `${title} — image viewer` : "Image viewer"}
+      aria-label={title ? `${title}, image viewer` : "Image viewer"}
       className="fixed inset-0 z-[120] flex flex-col bg-navy-deep/95 backdrop-blur-sm"
       onClick={onClose}
       onTouchStart={onTouchStart}
@@ -123,7 +123,7 @@ export default function Lightbox({ images, index, title, onClose, onNavigate }: 
           />
         </div>
 
-        {/* Prev / Next — desktop side controls */}
+        {/* Prev / Next, desktop side controls */}
         {count > 1 ? (
           <>
             <button

@@ -56,7 +56,7 @@ export default function CaseStudySection({ study, tone = "warmwhite" }: CaseStud
           </div>
         ) : null}
 
-        {/* Hero image, full width — clickable */}
+        {/* Hero image, full width, clickable */}
         {hero ? (
         <Reveal className="mb-4">
           <button
@@ -77,7 +77,7 @@ export default function CaseStudySection({ study, tone = "warmwhite" }: CaseStud
         </Reveal>
         ) : null}
 
-        {/* Remaining images, editorial grid — each clickable */}
+        {/* Remaining images, editorial grid, each clickable */}
         {rest.length > 0 ? (
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
             {rest.map((img, i) => (

@@ -6,7 +6,7 @@ export type Testimonial = {
 };
 
 /**
- * Client testimonials — add each new review here and it appears on the
+ * Client testimonials, add each new review here and it appears on the
  * homepage automatically, styled to match the editorial aesthetic.
  * While this list is empty, the testimonials section stays hidden.
  *

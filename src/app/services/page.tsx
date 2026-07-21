@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import BeforeAfter from "@/components/BeforeAfter";
 import Button from "@/components/Button";
 import PageHeader from "@/components/PageHeader";
@@ -10,7 +11,7 @@ import { services } from "@/lib/services";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Signature services from Fly Girl Events & Design — corporate event styling in Frisco, styled spaces, luxury property staging, executive office styling, welcome gifts, destination experiences, and private celebrations.",
+    "Signature services from Fly Girl Events & Design, corporate event styling in Frisco, styled spaces, luxury property staging, executive office styling, welcome gifts, destination experiences, and private celebrations.",
 };
 
 export default function ServicesPage() {
@@ -19,7 +20,7 @@ export default function ServicesPage() {
       <PageHeader
         eyebrow="What We Create"
         title="Signature Services"
-        intro="Corporate and executive experiences, styled spaces, welcome gifts, and celebrations — each approached as a bespoke commission, never a package."
+        intro="Corporate and executive experiences, styled spaces, welcome gifts, and celebrations, each approached as a bespoke commission, never a package."
         eyebrowClassName="eyebrow-ink"
       />
 
@@ -36,7 +37,14 @@ export default function ServicesPage() {
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <div>
-                  <h2 className="mb-3 text-2xl text-plum sm:text-3xl">{service.title}</h2>
+                  <h2 className="mb-3 text-2xl text-plum sm:text-3xl">
+                    <Link
+                      href={`/services/${service.slug}`}
+                      className="transition-colors hover:text-gold-ink"
+                    >
+                      {service.title}
+                    </Link>
+                  </h2>
                   <p className="max-w-[54ch] text-plum-soft">{service.detail}</p>
                   <div className="mt-6">
                     <Button href="/begin-your-journey" variant="dark">
@@ -50,7 +58,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* HOME STAGING — dedicated section */}
+      {/* HOME STAGING, dedicated section */}
       <section id="home-staging" className="bg-gradient-to-b from-ivory to-warmwhite">
         <div className="section-shell">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:items-center">
@@ -59,13 +67,13 @@ export default function ServicesPage() {
               <h2 className="mt-5 text-[clamp(2rem,3.6vw,3.1rem)] leading-[1.15] text-plum">
                 Home Staging
               </h2>
-              <p className="mt-5 max-w-[52ch] leading-[1.6] text-plum-body">
+              <p className="mt-5 max-w-[52ch] leading-[1.8] text-plum-body">
                 Fly Girl helps homeowners, Realtors, and builders prepare homes for
                 market by thoughtfully styling interiors to create emotional buyer
                 connections.
               </p>
-              <p className="mt-4 max-w-[52ch] leading-[1.6] text-plum-body">
-                Buyers don&apos;t fall in love with square footage — they fall in love
+              <p className="mt-4 max-w-[52ch] leading-[1.8] text-plum-body">
+                Buyers don&apos;t fall in love with square footage, they fall in love
                 with the life they can picture inside it. We stage every room so that
                 the moment a buyer walks in, the home already feels like theirs.
               </p>
@@ -75,7 +83,7 @@ export default function ServicesPage() {
                 <div className="relative aspect-[16/10] overflow-hidden rounded-[4px] shadow-media">
                   <Image
                     src="/media/concepts/staging/home-staging-living-before.jpg"
-                    alt="Living room before Fly Girl staging — neutral and unstyled"
+                    alt="Living room before Fly Girl staging, neutral and unstyled"
                     fill
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -85,7 +93,7 @@ export default function ServicesPage() {
                 <div className="relative aspect-[16/10] overflow-hidden rounded-[4px] shadow-media">
                   <Image
                     src="/media/concepts/staging/home-staging-living-after.jpg"
-                    alt="The same living room after Fly Girl staging — layered navy, gold, and editorial styling"
+                    alt="The same living room after Fly Girl staging, layered navy, gold, and editorial styling"
                     fill
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -94,14 +102,14 @@ export default function ServicesPage() {
                 </div>
               </div>
               <figcaption className="mt-3 text-center text-[0.85rem] text-plum-body/85">
-                The same room — before, and after Fly Girl.
+                The same room, before, and after Fly Girl.
               </figcaption>
             </Reveal>
           </div>
         </div>
       </section>
 
-      {/* VIRTUAL STAGING — dedicated section */}
+      {/* VIRTUAL STAGING, dedicated section */}
       <section id="virtual-staging" className="bg-warmwhite">
         <div className="section-shell">
           <Reveal className="mx-auto mb-[clamp(2.5rem,5vw,3.5rem)] max-w-[680px] text-center">
@@ -109,7 +117,7 @@ export default function ServicesPage() {
             <h2 className="mt-5 text-[clamp(2rem,3.6vw,3.1rem)] leading-[1.15] text-plum">
               Virtual Staging
             </h2>
-            <p className="mx-auto mt-5 max-w-[56ch] leading-[1.6] text-plum-body">
+            <p className="mx-auto mt-5 max-w-[56ch] leading-[1.8] text-plum-body">
               Send us photos of an empty or outdated room, and Fly Girl digitally
               reimagines the space before a single piece of furniture is purchased.
               Perfect for builders, luxury Realtors, developers, vacation rentals,
@@ -123,23 +131,23 @@ export default function ServicesPage() {
           <div className="space-y-10">
             <BeforeAfter
               beforeSrc="/media/concepts/staging/living-room-before.jpg"
-              beforeAlt="Before — a rustic living room with stone fireplace prior to the virtual staging concept"
+              beforeAlt="Before: a rustic living room with stone fireplace prior to the virtual staging concept"
               afterSrc="/media/concepts/staging/living-room-after-concept.jpg"
-              afterAlt="Design Concept — the same living room digitally reimagined in warm ivory with editorial styling"
-              caption="A rustic great room, digitally reimagined in warm ivory — same architecture, entirely new feeling."
+              afterAlt="Design Concept: the same living room digitally reimagined in warm ivory with editorial styling"
+              caption="A rustic great room, digitally reimagined in warm ivory, same architecture, entirely new feeling."
             />
             <BeforeAfter
               beforeSrc="/media/concepts/staging/bathroom-before.jpg"
-              beforeAlt="Before — an unstyled bathroom prior to the virtual staging concept"
+              beforeAlt="Before: an unstyled bathroom prior to the virtual staging concept"
               afterSrc="/media/concepts/staging/bathroom-after-concept.jpg"
-              afterAlt="Design Concept — the same bathroom digitally reimagined with layered shelving, art, and warm styling"
+              afterAlt="Design Concept: the same bathroom digitally reimagined with layered shelving, art, and warm styling"
               caption="An everyday bathroom, digitally restyled with warmth, texture, and considered details."
             />
           </div>
         </div>
       </section>
 
-      {/* WELCOME GIFTS — the Fly Girl signature */}
+      {/* WELCOME GIFTS, the Fly Girl signature */}
       <section id="welcome-gifts" className="bg-gradient-to-b from-ivory to-warmwhite">
         <div className="section-shell">
           <Reveal className="mx-auto mb-[clamp(2.5rem,5vw,3.5rem)] max-w-[680px] text-center">
@@ -151,7 +159,7 @@ export default function ServicesPage() {
               A first impression, beautifully wrapped. Corporate welcome gifts,
               executive and VIP gifts, destination and hotel-room gifts,
               client-appreciation and retreat gifts, luxury gift boxes, and
-              personalized guest gifts — finished with premium packaging, ribbon,
+              personalized guest gifts, finished with premium packaging, ribbon,
               thoughtful contents, and impeccable presentation.
             </p>
           </Reveal>
@@ -184,7 +192,7 @@ export default function ServicesPage() {
                     >
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <p className="leading-[1.5] text-plum-body">{step}</p>
+                    <p className="leading-[1.7] text-plum-body">{step}</p>
                   </li>
                 ))}
               </ol>

@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Begin your journey with Fly Girl Events & Design — luxury event designer in Frisco for corporate experiences, styled spaces, welcome gifts, and private celebrations.",
+    "Begin your journey with Fly Girl Events & Design, luxury event designer in Frisco for corporate experiences, styled spaces, welcome gifts, and private celebrations.",
 };
 
 export default function ContactPage() {
@@ -28,7 +28,7 @@ export default function ContactPage() {
               <h2 className="mb-6 mt-4 text-3xl text-plum">Fly Girl Events &amp; Design</h2>
               <p className="mb-8 max-w-[38ch] text-plum-soft">
                 Luxury event design and styled spaces. Visit us by appointment at the
-                Fly Girl Design Studio at Formation — Dallas Cowboys World Headquarters,
+                Fly Girl Design Studio at Formation, Dallas Cowboys World Headquarters,
                 Frisco. Available for experiences at home and destinations worldwide.
               </p>
               <div className="space-y-4 text-[0.82rem]">

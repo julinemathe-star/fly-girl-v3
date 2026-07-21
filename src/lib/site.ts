@@ -17,11 +17,11 @@ export const site = {
 
   /** One-line positioning shown across the site. */
   positioning: "Luxury Event Designer",
-  /** Hero headline — the studio's primary promise, stated plainly. */
+  /** Hero headline, the studio's primary promise, stated plainly. */
   heroStatement: "We Create Extraordinary Environments",
-  /** Hero support line — concise, editorial, no fluff. */
+  /** Hero support line, concise, editorial, no fluff. */
   heroSub:
-    "A luxury design studio for celebrations, executive experiences, and styled spaces — in Frisco, Texas and worldwide.",
+    "A luxury design studio at the Dallas Cowboys World Headquarters, creating executive experiences, sports hospitality, styled spaces, and signature celebrations.",
   /** Immediate clarity statement for new visitors (homepage, meta). */
   clarity:
     "We transform celebrations, executive spaces, model homes and luxury environments into unforgettable experiences through thoughtful design, styling and hospitality.",
@@ -29,7 +29,7 @@ export const site = {
     "Luxury Event Design • Corporate & Executive Experiences • Styled Spaces • Welcome Gifts",
   boardroomsLine: "From boardrooms to ballrooms, we design spaces people remember.",
   description:
-    "Fly Girl Events & Design is a luxury creative studio in Frisco, Texas. Luxury event designer for corporate and executive experiences, styled spaces, luxury property staging, welcome gifts, destination experiences, and private celebrations.",
+    "Fly Girl Events & Design is a luxury creative studio at the Dallas Cowboys World Headquarters in Frisco, Texas. Executive experiences, sports hospitality, styled spaces, model home styling, luxury staging, welcome gifts, and signature celebrations.",
   url: "https://flygirl.events",
   email: "juline@flygirl.events",
   phone: "(214) 937-9522",
@@ -42,8 +42,8 @@ export const site = {
   cityStateZip: "Frisco, Texas 75034",
   studioName: "Formation",
   studioDescription:
-    "Our private Design Studio at Formation — Dallas Cowboys World Headquarters, Frisco, Texas",
-  location: "Frisco, Texas — & worldwide",
+    "Our private Design Studio at Formation, Dallas Cowboys World Headquarters, Frisco, Texas",
+  location: "Frisco, Texas, & worldwide",
   directionsUrl:
     "https://www.google.com/maps/dir/?api=1&destination=" +
     encodeURIComponent("Formation, 5 Cowboys Way, Frisco, TX 75034"),

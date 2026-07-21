@@ -20,7 +20,7 @@ export default function Footer() {
         />
 
         <nav aria-label="Footer" className="mt-9">
-          <ul className="flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-warmwhite/70">
+          <ul className="flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-[0.72rem] font-medium uppercase tracking-[0.2em] text-warmwhite/70">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link href={link.href} className="transition hover:text-champagne">
@@ -31,7 +31,7 @@ export default function Footer() {
           </ul>
         </nav>
 
-        <div className="mt-8 flex items-center justify-center gap-6 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-warmwhite/50">
+        <div className="mt-8 flex items-center justify-center gap-6 text-[0.68rem] font-medium uppercase tracking-[0.18em] text-warmwhite/50">
           <Link href="/privacy-policy" className="transition hover:text-champagne">
             Privacy Policy
           </Link>

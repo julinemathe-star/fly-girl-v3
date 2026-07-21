@@ -8,7 +8,7 @@ export default function NotFound() {
         This page has taken flight.
       </h1>
       <p className="mt-4 max-w-[42ch] text-plum-soft">
-        The page you&apos;re looking for isn&apos;t here — but there&apos;s plenty more
+        The page you&apos;re looking for isn&apos;t here, but there&apos;s plenty more
         to explore.
       </p>
       <div className="mt-10">

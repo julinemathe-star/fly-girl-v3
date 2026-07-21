@@ -9,17 +9,17 @@ import { site, consultationHref } from "@/lib/site";
 export const metadata: Metadata = {
   title: "The Design Studio Experience",
   description:
-    "Experience your event before event day. Visit our private Design Studio at Formation — Dallas Cowboys World Headquarters to see, touch, compare, and refine every design element before installation day.",
+    "Experience your event before event day. Visit our private Design Studio at Formation, Dallas Cowboys World Headquarters to see, touch, compare, and refine every design element before installation day.",
 };
 
 export default function PreviewExperiencePage() {
   return (
     <>
-      {/* HERO — full-width Design Studio image (aspirational brand visualization) */}
+      {/* HERO, full-width Design Studio image (aspirational brand visualization) */}
       <section className="relative flex min-h-[92vh] w-full items-end overflow-hidden">
         <Image
           src="/media/design-studio-hero.jpg"
-          alt="A visualization of the Fly Girl Design Studio experience — a private consultation table styled with a custom menu, invitation suite, fabric swatches, and florals, at Formation, Dallas Cowboys World Headquarters in Frisco"
+          alt="A visualization of the Fly Girl Design Studio experience, a private consultation table styled with a custom menu, invitation suite, fabric swatches, and florals, at Formation, Dallas Cowboys World Headquarters in Frisco"
           fill
           priority
           sizes="100vw"
@@ -38,7 +38,7 @@ export default function PreviewExperiencePage() {
             <h1 className="mt-5 text-[clamp(2.3rem,5vw,4rem)] leading-[1.08] text-white text-shadow-luxe">
               Experience Your Event Before Your Event
             </h1>
-            <p className="mx-auto mt-7 max-w-[58ch] text-[1.05rem] leading-[1.55] text-white/90 text-shadow-soft">
+            <p className="mx-auto mt-7 max-w-[58ch] text-[1.05rem] leading-[1.75] text-white/90 text-shadow-soft">
               Most clients don&apos;t see their event until the day it happens. At Fly
               Girl Events &amp; Design, we believe luxury should come with confidence.
               Inside our private Design Studio at Formation, Dallas Cowboys World Headquarters in Frisco, clients
@@ -54,7 +54,7 @@ export default function PreviewExperiencePage() {
         </div>
       </section>
 
-      {/* SECTION 1 — Where Your Vision Takes Flight + Invitation Suite */}
+      {/* SECTION 1, Where Your Vision Takes Flight + Invitation Suite */}
       <EditorialImageSection
         heading="Where Your Vision Takes Flight"
         body={[
@@ -66,7 +66,7 @@ export default function PreviewExperiencePage() {
         alt="A luxury destination wedding invitation suite with passport, boarding pass, and travel-inspired stationery"
       />
 
-      {/* SECTION 2 — See Your Celebration + Jamaica Tablescape */}
+      {/* SECTION 2, See Your Celebration + Jamaica Tablescape */}
       <EditorialImageSection
         tone="ivory"
         heading="See Your Celebration Before Event Day"
@@ -78,14 +78,14 @@ export default function PreviewExperiencePage() {
         alt="A luxury tropical tablescape in Jamaica with vibrant orchid centerpieces and teal glassware"
       />
 
-      {/* SECTION 3 — Luxury Lives in the Details + Welcome Bags */}
+      {/* SECTION 3, Luxury Lives in the Details + Welcome Bags */}
       <section className="bg-warmwhite">
         <div className="pt-[clamp(5rem,11vw,9.5rem)]">
           <Reveal className="mx-auto max-w-[680px] px-[clamp(1.5rem,6vw,5rem)] text-center">
             <h2 className="text-[clamp(2rem,3.6vw,3.1rem)] leading-[1.15] text-plum">
               Luxury Lives In The Details
             </h2>
-            <div className="mx-auto mt-7 max-w-[58ch] text-[1.02rem] leading-[1.6] text-plum-body">
+            <div className="mx-auto mt-7 max-w-[58ch] text-[1.02rem] leading-[1.8] text-plum-body">
               <p>Beautiful celebrations are remembered because of the details.</p>
               <p className="mt-5 font-serif text-lg italic text-gold-ink">
                 Welcome gifts&hellip; Personalized stationery&hellip; Guest favors&hellip;
@@ -130,7 +130,7 @@ export default function PreviewExperiencePage() {
               {designStudioIncludes.map((item) => (
                 <li
                   key={item}
-                  className="flex items-start gap-3 text-[1.02rem] leading-[1.5] text-plum-body"
+                  className="flex items-start gap-3 text-[1.02rem] leading-[1.7] text-plum-body"
                 >
                   <span
                     aria-hidden="true"
@@ -143,7 +143,7 @@ export default function PreviewExperiencePage() {
           </Reveal>
 
           <Reveal delay={0.16} className="mx-auto mt-10 max-w-[620px] text-center">
-            <p className="font-serif text-xl italic leading-[1.5] text-gold-ink">
+            <p className="font-serif text-xl italic leading-[1.7] text-gold-ink">
               Leave knowing exactly how your event will look before your celebration
               arrives.
             </p>
@@ -179,13 +179,13 @@ export default function PreviewExperiencePage() {
               </span>
             </div>
 
-            <p className="mx-auto mt-8 max-w-[54ch] text-[1.02rem] leading-[1.6] text-plum-body">
+            <p className="mx-auto mt-8 max-w-[54ch] text-[1.02rem] leading-[1.8] text-plum-body">
               Your $250 Design Studio Consultation is a private appointment at the Fly
-              Girl Design Studio at Formation — Dallas Cowboys World Headquarters in
+              Girl Design Studio at Formation, Dallas Cowboys World Headquarters in
               Frisco.
             </p>
 
-            <blockquote className="mx-auto mt-10 max-w-[52ch] border-l-2 border-gold/60 pl-6 text-left font-serif text-xl italic leading-[1.5] text-gold-ink sm:text-2xl">
+            <blockquote className="mx-auto mt-10 max-w-[52ch] border-l-2 border-gold/60 pl-6 text-left font-serif text-xl italic leading-[1.7] text-gold-ink sm:text-2xl">
               We don&apos;t ask you to imagine your celebration.
               <br />
               We invite you to experience it before it happens.
@@ -213,7 +213,7 @@ export default function PreviewExperiencePage() {
                   {step.n}
                 </span>
                 <h3 className="mt-4 text-xl leading-snug text-plum">{step.title}</h3>
-                <p className="mt-4 text-[0.92rem] leading-[1.55] text-plum-body">
+                <p className="mt-4 text-[0.92rem] leading-[1.75] text-plum-body">
                   {step.body}
                 </p>
               </Reveal>

@@ -27,7 +27,7 @@ export default function JourneyInquiryForm() {
     const data = new FormData(form);
     const get = (key: string) => String(data.get(key) || "");
 
-    const subject = `Private Consultation Request — ${get("eventType") || "Celebration"} — ${get(
+    const subject = `Private Consultation Request, ${get("eventType") || "Celebration"}, ${get(
       "name"
     )}`;
     const body = [
@@ -246,7 +246,7 @@ export default function JourneyInquiryForm() {
         </button>
         {sent ? (
           <p role="status" className="mt-4 text-[0.82rem] text-plum-body">
-            Thank you — your email draft is ready to send. If it didn&apos;t open,
+            Thank you, your email draft is ready to send. If it didn&apos;t open,
             reach us directly at{" "}
             <a href={`mailto:${site.email}`} className="text-gold-ink underline">
               {site.email}

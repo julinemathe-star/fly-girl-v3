@@ -49,7 +49,7 @@ export default function CrewCard({ member, index }: CrewCardProps) {
 
         <div className="mt-5 space-y-4">
           {member.bio.map((para, i) => (
-            <p key={i} className="text-[0.92rem] leading-[1.55] text-plum-body">
+            <p key={i} className="text-[0.92rem] leading-[1.75] text-plum-body">
               {para}
             </p>
           ))}

@@ -22,5 +22,5 @@ export const littleLuxeInvestment = {
   title: "Little Luxe™",
   detail: "Children's Celebrations",
   summary:
-    "Every Little Luxe™ celebration begins with your child's imagination — a limited boutique offering designed with the same artistry as our most refined events.",
+    "Every Little Luxe™ celebration begins with your child's imagination, a limited boutique offering designed with the same artistry as our most refined events.",
 };

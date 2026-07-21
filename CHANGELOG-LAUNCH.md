@@ -208,3 +208,62 @@ hierarchy and lazy loading intact.
   no placeholder content ships.
 - QC: old numbers gone, every link and asset verified, all files pass
   syntax checks, images lazy-load, contact links clickable.
+
+
+---
+
+# Feedback Response Pass
+
+- Typography rebalanced for luxury: body back to regular weight with airy
+  1.75 line height (18px on iPhone and Marcellus headings retained);
+  semibold reserved for buttons; nav and footer links at medium weight.
+- Em dashes removed from all user-facing copy, replaced with periods,
+  commas, and colons contextually. Only invisible code comments retain them.
+- Tappable phone number added to the mobile menu drawer, below Plan Your
+  Event, so the number is reachable from anywhere on the site.
+- SEO: every service now has its own page at /services/<slug> with unique
+  metadata (12 new indexed routes, e.g. /services/model-home-styling,
+  /services/sports-hospitality). Each shows the full service description,
+  starting investment where published, its own CTA, and is linked from the
+  service titles on the main Services page. All added to the sitemap.
+
+
+---
+
+# Repositioning Pass: Executive, Sports & Staging Focus
+
+- Identity restated everywhere it matters: "A luxury design studio at the
+  Dallas Cowboys World Headquarters, creating executive experiences,
+  sports hospitality, styled spaces, and signature celebrations" now leads
+  the hero, the homepage introduction, and the site's SEO description.
+  Celebrations moved from first to last in every ordering.
+- Investment restructure:
+  * Design Consultation now $350 (still credited toward engagement).
+  * NEW Sports Hospitality tier, designed by private proposal, positioned
+    second, written from inside the world of sports at the Cowboys HQ.
+  * Corporate & Executive and Destination Experiences now by private
+    proposal (corporate notes engagements typically begin at $7,500).
+  * Model Home Styling from $5,000; Home Staging from $4,500; Welcome
+    Gifts from $1,000; Virtual Staging unchanged at $395.
+  * The $500-per-room Residential Styling tier removed entirely.
+- Portfolio reordered at render time: Executive Dinners (real
+  photography) leads, followed by Styled Spaces, Sports Hospitality, and
+  Corporate concepts; weddings and family celebrations follow. Category
+  index reordered to match. No data was deleted.
+- Individual service pages show "Designed by private proposal" for the
+  by-proposal tiers instead of a starting price.
+- Ready for the Formation conference-room photography: when the staged
+  photos arrive, they drop into the portfolio folders and appear
+  automatically.
+
+
+---
+
+# Turnkey Furnishing Copy
+
+- Model Home Styling now states the one-stop model: design, procurement
+  of furnishings on the client's behalf through trade partnerships, and
+  turnkey installation.
+- Home Staging now describes the full-service model: curated rental
+  furnishing collections finished with accessories and styling details
+  from the Fly Girl inventory, delivered as one complete service.

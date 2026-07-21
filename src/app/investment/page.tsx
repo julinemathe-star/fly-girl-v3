@@ -17,7 +17,7 @@ import { site, consultationHref } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Investment",
   description:
-    "Signature Services and starting investments from Fly Girl Events & Design — luxury event designer in Frisco for corporate event styling, styled spaces, luxury home staging, executive office styling, welcome gifts, and private celebrations.",
+    "Signature Services and starting investments from Fly Girl Events & Design, luxury event designer in Frisco for corporate event styling, styled spaces, luxury home staging, executive office styling, welcome gifts, and private celebrations.",
 };
 
 export default function InvestmentPage() {
@@ -32,24 +32,24 @@ export default function InvestmentPage() {
       {/* PHILOSOPHY INTRO */}
       <section className="bg-warmwhite">
         <div className="mx-auto max-w-[720px] px-[clamp(1.5rem,6vw,5rem)] pb-[clamp(4rem,8vw,7rem)] text-center">
-          <Reveal className="space-y-6 text-[1.05rem] leading-[1.6] text-plum-body">
+          <Reveal className="space-y-6 text-[1.05rem] leading-[1.8] text-plum-body">
             <p>
               Every Fly Girl project is thoughtfully designed around your goals, your
               space, and the experience you want people to remember. You are not simply
-              hiring us to decorate—you are hiring Fly Girl to imagine the concept,
+              hiring us to decorate. You are hiring Fly Girl to imagine the concept,
               design every detail, and execute it flawlessly from beginning to
               completion.
             </p>
             <p>
               Rather than fixed packages, each Signature Service begins at a starting
-              investment — your final proposal is shaped around your vision, your
+              investment, your final proposal is shaped around your vision, your
               space, and the details that matter most.
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* SIGNATURE SERVICES — starting investments */}
+      {/* SIGNATURE SERVICES, starting investments */}
       <section id="collections" className="bg-gradient-to-b from-ivory to-warmwhite">
         <div className="section-shell">
           <Reveal className="mx-auto mb-[clamp(4rem,8vw,6rem)] max-w-[680px] text-center">
@@ -103,7 +103,7 @@ export default function InvestmentPage() {
                   </div>
                 )}
 
-                <p className="mt-5 text-[0.95rem] leading-[1.55] text-plum-body">
+                <p className="mt-5 text-[0.95rem] leading-[1.75] text-plum-body">
                   {tier.description}
                 </p>
                 <ul className="mt-6 space-y-2.5 border-t border-gold/20 pt-6">
@@ -130,7 +130,7 @@ export default function InvestmentPage() {
           </div>
 
           <Reveal className="mx-auto mt-[clamp(3rem,6vw,4.5rem)] max-w-[640px] text-center">
-            <p className="font-serif text-xl italic leading-[1.6] text-gold-ink">
+            <p className="font-serif text-xl italic leading-[1.8] text-gold-ink">
               &ldquo;{hiringStatement}&rdquo;
             </p>
           </Reveal>
@@ -145,7 +145,7 @@ export default function InvestmentPage() {
             <h2 className="mt-6 text-[clamp(2rem,3.6vw,3.1rem)] leading-[1.15] text-plum">
               {designStudioConsultation.title}
             </h2>
-            <p className="mx-auto mt-7 max-w-[54ch] text-[1.05rem] leading-[1.6] text-plum-body">
+            <p className="mx-auto mt-7 max-w-[54ch] text-[1.05rem] leading-[1.8] text-plum-body">
               {designStudioConsultation.location}
             </p>
             <div className="mt-9 inline-flex items-baseline gap-3 rounded-[4px] border border-gold/40 bg-warmwhite px-8 py-5 shadow-media">
@@ -240,7 +240,7 @@ export default function InvestmentPage() {
           </Reveal>
 
           <Reveal delay={0.16} className="mx-auto mt-10 max-w-[620px] text-center">
-            <p className="text-[0.95rem] leading-[1.55] text-plum-body">{materialsNote}</p>
+            <p className="text-[0.95rem] leading-[1.75] text-plum-body">{materialsNote}</p>
           </Reveal>
         </div>
       </section>
@@ -273,7 +273,7 @@ export default function InvestmentPage() {
                   <h3 className="mb-3 text-2xl leading-snug text-plum sm:text-[1.7rem]">
                     {step.title}
                   </h3>
-                  <p className="max-w-[56ch] leading-[1.6] text-plum-body">{step.body}</p>
+                  <p className="max-w-[56ch] leading-[1.8] text-plum-body">{step.body}</p>
                 </div>
               </Reveal>
             ))}
@@ -296,8 +296,8 @@ export default function InvestmentPage() {
             <h2 className="mb-8 mt-6 text-[clamp(2rem,4vw,3.2rem)] leading-[1.2] text-plum">
               Let&apos;s Create Something Unforgettable.
             </h2>
-            <p className="mx-auto mb-10 max-w-[52ch] leading-[1.6] text-plum-body">
-              Reserve your Design Studio Consultation and begin the experience — from
+            <p className="mx-auto mb-10 max-w-[52ch] leading-[1.8] text-plum-body">
+              Reserve your Design Studio Consultation and begin the experience, from
               boardrooms to ballrooms, we design spaces people remember.
             </p>
             <Button href={consultationHref} variant="dark">
