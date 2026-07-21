@@ -18,9 +18,9 @@ export const journeyExperience = [
 ];
 
 export const previewFee = {
-  price: "$250",
+  price: "$350",
   title: "The Design Studio Consultation",
-  body: "A $250 Design Studio Consultation reserves your private appointment at Formation, where we discuss your vision, goals, inspiration, and initial design direction.",
+  body: "A $350 Design Studio Consultation reserves your private appointment at Formation, where we discuss your vision, goals, inspiration, and initial design direction.",
   note: "This appointment allows us to begin designing an experience that's uniquely yours.",
 };
 

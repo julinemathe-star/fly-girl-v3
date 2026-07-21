@@ -25,7 +25,7 @@ const steps: Step[] = [
   {
     n: "03",
     title: "Design Studio Consultation",
-    body: "Before production begins, you're invited into the Fly Girl Design Studio at Formation to review, touch, compare, and approve the key elements of your project. The Design Studio Consultation is $250.",
+    body: "Before production begins, you're invited into the Fly Girl Design Studio at Formation to review, touch, compare, and approve the key elements of your project. The Design Studio Consultation is $350.",
     note: "During the preview, you'll experience many of the actual design elements planned for your celebration, tablescapes, chargers, linens, florals, personalized menu cards, table numbers, invitations, signature displays, favors, and your overall design direction.",
     quote:
       "We don't ask you to imagine your celebration.\nWe invite you to experience it before it happens.",

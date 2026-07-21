@@ -171,7 +171,7 @@ export default function PreviewExperiencePage() {
             </h2>
 
             <div className="mt-9 inline-flex items-baseline gap-2 rounded-[4px] border border-gold/40 bg-ivory px-8 py-5 shadow-media">
-              <span className="font-serif text-[2.4rem] leading-none text-plum">$250</span>
+              <span className="font-serif text-[2.4rem] leading-none text-plum">$350</span>
               <span className="font-sans text-[0.72rem] uppercase tracking-luxe text-gold-ink">
                 Private
                 <br />
@@ -180,7 +180,7 @@ export default function PreviewExperiencePage() {
             </div>
 
             <p className="mx-auto mt-8 max-w-[54ch] text-[1.02rem] leading-[1.8] text-plum-body">
-              Your $250 Design Studio Consultation is a private appointment at the Fly
+              Your $350 Design Studio Consultation is a private appointment at the Fly
               Girl Design Studio at Formation, Dallas Cowboys World Headquarters in
               Frisco.
             </p>

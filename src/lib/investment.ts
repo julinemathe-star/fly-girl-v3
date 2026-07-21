@@ -221,7 +221,7 @@ export const nextSteps = [
   {
     n: "01",
     title: "Reserve Your Design Studio Consultation",
-    body: "Your $250 Design Studio Consultation is a private appointment at Formation, vision meeting, mood board, concept development, color palette, material recommendations, and investment planning.",
+    body: "Your $350 Design Studio Consultation is a private appointment at Formation, vision meeting, mood board, concept development, color palette, material recommendations, and investment planning.",
   },
   {
     n: "02",
